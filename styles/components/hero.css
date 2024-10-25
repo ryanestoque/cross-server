@@ -11,7 +11,7 @@
 
 .hero__heading {
   max-width: 15ch;
-  font-size: 2rem;
+  font-size: var(--size-3xl);
   letter-spacing: -0.05em;
   color: var(--clr-light);
 }
@@ -26,6 +26,11 @@
 .hero__btn {
   text-transform: capitalize;
   font-size: var(--size-sm);
+}
+
+/* xxs-screens */
+@media (min-width: 320px) {
+
 }
 
 /* xs-screens */
