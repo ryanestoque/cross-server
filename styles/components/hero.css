@@ -11,7 +11,7 @@
 
 .hero__heading {
   max-width: 15ch;
-  font-size: var(--size-3xl);
+  font-size: var(--size-4xl);
   letter-spacing: -0.05em;
   color: var(--clr-light);
 }
@@ -36,7 +36,7 @@
 /* xs-screens */
 @media (min-width: 475px) {
   .hero {
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .hero__heading {
@@ -49,7 +49,6 @@
     color: var(--clr-light);
     font-weight: 500;
   }
-
 }
 
 /* sm-screens */
@@ -94,7 +93,7 @@
 /* xl-screens */
 @media (min-width: 1280px) {
   .hero {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .hero__heading {
