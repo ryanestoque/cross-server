@@ -11,7 +11,7 @@
 
 .hero__heading {
   max-width: 15ch;
-  font-size: var(--size-4xl);
+  font-size: 2rem;
   letter-spacing: -0.05em;
   color: var(--clr-light);
 }
