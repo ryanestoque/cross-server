@@ -10,21 +10,22 @@
 }
 
 .hero__heading {
-  font-size: var(--size-3xl);
+  max-width: 15ch;
+  font-size: var(--size-4xl);
   letter-spacing: -0.05em;
   color: var(--clr-light);
 }
 
 .hero__desc {
   max-width: 60ch;
-  font-size: var(--size-xs);
+  font-size: var(--size-md);
   color: var(--clr-light);
   font-weight: 500;
 }
 
 .hero__btn {
   text-transform: capitalize;
-  font-size: var(--size-xxs);
+  font-size: var(--size-sm);
 }
 
 /* xs-screens */
@@ -36,16 +37,14 @@
   .hero__heading {
     font-size: var(--size-4xl);
   }
-  
+
   .hero__desc {
     max-width: 60ch;
-    font-size: var(--size-sm);
+    font-size: var(--size-lg);
+    color: var(--clr-light);
+    font-weight: 500;
   }
 
-  .hero__btn {
-    text-transform: capitalize;
-    font-size: var(--size-xs);
-  }
 }
 
 /* sm-screens */
@@ -56,12 +55,12 @@
   
   .hero__desc {
     max-width: 60ch;
-    font-size: var(--size-base);
+    font-size: var(--size-xl);
   }
   
   .hero__btn {
     text-transform: capitalize;
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
 }
 
@@ -78,7 +77,7 @@
   
   .hero__desc {
     max-width: 60ch;
-    font-size: var(--size-lg);
+    font-size: var(--size-xl);
   }
   
   .hero__btn {
