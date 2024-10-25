@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header__title {
+  color: var(--clr-light);
+  font-size: var(--size-lg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.header__buttons {
+  display: none;
+}
+
+.header__bars {
+  display: block;
+  color: var(--clr-light);
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+}
+
+/* xs-screens */
+@media (min-width: 475px) {
+
+}
+
+/* sm-screens */
+@media (min-width: 640px) {
+  .header__title {
+    font-size: var(--size-xl);
+  }
+}
+
+/* md-screens */
+@media (min-width: 768px) {
+  .header__buttons {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .header__link {
+    color: var(--clr-light);
+    font-size: var(--size-sm);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    transition: 0.3s color;
+    margin-left: 3em;
+  }
+  
+  .header__link:hover {
+    color: var(--clr-rose600);
+  }
+
+  .header__link:active {
+    color: var(--clr-light);
+  }
+  
+  .header__line {
+    border: solid 1px var(--clr-light);
+    padding-top: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  
+  .header__cart {
+    display: block;
+    color: var(--clr-light);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    margin-right: 1.5em;
+    transition: color 0.3s;
+  }
+
+  .header__cart:hover {
+    color: var(--clr-rose600);
+  }
+
+  .header__cart:active {
+    color: var(--clr-light);
+  }
+  
+  .header__login {
+    font-size: var(--size-sm);
+  }
+
+  .header__bars {
+    display: none;
+    color: var(--clr-light);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+  }
+}
+
+/* lg-screens */
+@media (min-width: 1024px) {
+  .header__title {
+    font-size: var(--size-2xl);
+  }
+
+  .header__link {
+    font-size: var(--size-base);
+  }
+  
+  .header__cart {
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+    margin-right: 1.5em;
+  }
+  
+  .header__login {
+    font-size: var(--size-sm);
+  }
+}
+
+/* xl-screens */
+@media (min-width: 1280px) {
+  .header__link {
+    font-size: var(--size-lg);
+  }
+}
+
+/* 2xl-screens */
+@media (min-width: 1536px) {
+
+}
