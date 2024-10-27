@@ -34,7 +34,7 @@
 } */
 
 .btn {
-  border: solid 2px var(--clr-rose600);
+  border: solid 3px var(--clr-rose600);
   background-color: var(--clr-rose600);
   padding: 0.75em 1.125em;
   color: var(--clr-light);
@@ -45,7 +45,7 @@
 }
 
 .btn:hover {
-  border: solid 2px var(--clr-rose600);
+  border: solid 3px var(--clr-rose600);
   background-color: var(--clr-light);
   color: var(--clr-rose600);
 }
