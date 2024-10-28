@@ -1,0 +1,187 @@
+.marquee {
+  text-align: center;
+}
+
+.marquee__title {
+  font-weight: 600;
+  font-size: var(--size-base);
+  color: var(--clr-light);
+}
+
+.marquee__wrapper {
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+  height: 96px;
+  mask-image: linear-gradient(
+    to right, 
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right, 
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.marquee__img {
+  position: absolute;
+  height: 96px;
+  width: 96px;
+  border-radius: 16px;
+  left: max(calc(96px * 10), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.amara-snack-bar__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.cafe-ferrer__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.chicks-ahoy__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.coffito__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.kuya-jong__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.santino__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.top-spatula__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.titas-catering__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.waffle-time__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+.zekiah-sisig__img {
+  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -192px;
+  }
+}
+
+/* xs-screens */
+@media (min-width: 475px) {
+  .marquee__title {
+    font-size: var(--size-lg);
+  }
+
+  .marquee__wrapper {
+    height: 128px;
+  }
+  
+  .marquee__img {
+    height: 128px;
+    width: 128px;
+    left: max(calc(128px * 10), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scrollLeft {
+    to {
+      left: -128px;
+    }
+  }
+}
+
+/* sm-screens */
+@media (min-width: 640px) {
+  .marquee__title {
+    font-size: var(--size-xl);
+  }
+}
+
+/* md-screens */
+@media (min-width: 768px) {
+  .marquee__title {
+    font-size: var(--size-2xl);
+  }
+
+  .marquee__wrapper {
+    height: 160px;
+  }
+  
+  .marquee__img {
+    height: 160px;
+    width: 160px;
+    left: max(calc(160px * 10), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scrollLeft {
+    to {
+      left: -160px;
+    }
+  }
+}
+
+/* lg-screens */
+@media (min-width: 1024px) {
+  .marquee__title {
+    font-size: var(--size-3xl);
+  }
+
+  .marquee__wrapper {
+    height: 192px;
+  }
+  
+  .marquee__img {
+    height: 192px;
+    width: 192px;
+    left: max(calc(192px * 10), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scrollLeft {
+    to {
+      left: -192px;
+    }
+  }
+}
+
+/* xl-screens */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* 2xl-screens */
+/* @media (min-width: 1536px) {
+
+}*/
