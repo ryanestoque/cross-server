@@ -85,7 +85,7 @@
 }
 
 .section {
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .loading {
@@ -136,9 +136,10 @@
   .container {
     max-width: 1024px;
   }
-  .section {
+
+  /* .section {
     margin-top: 10rem;
-  }
+  } */
 }
 
 /* xl-screens */
