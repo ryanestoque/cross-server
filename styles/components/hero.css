@@ -6,7 +6,7 @@
   text-align: center;
   gap: 1rem;
   margin-top: 3rem;
-  animation: fadeIn 1s ease-in-out;
+  animation: slideUp 1s ease-in-out;
 }
 
 .hero__heading {
