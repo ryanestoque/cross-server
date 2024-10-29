@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -70,9 +70,9 @@
 
 /* md-screens */
 @media (min-width: 768px) {
-  /* .hero {
+  .hero {
     margin-top: 4rem;
-  } */
+  }
 }
 
 /* lg-screens */

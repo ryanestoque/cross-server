@@ -4,3 +4,7 @@ import '../styles/components/header.css';
 import '../styles/components/hero.css';
 import '../styles/components/marquee.css';
 import '../styles/utils.css';
+
+import lazyLoading from './utils/lazy-loading.js';
+
+lazyLoading();
