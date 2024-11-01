@@ -14,7 +14,7 @@ const lazyLoading = () => {
       }
     });
   }, {
-    threshold: 0.35
+    threshold: 0.25
   });
   
   lazyContent.forEach(content => {
