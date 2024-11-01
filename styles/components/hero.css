@@ -24,7 +24,7 @@
 }
 
 .hero__btn {
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
   letter-spacing: -0.05em;
 }
 
@@ -51,10 +51,6 @@
   .hero__desc {
     max-width: 60ch;
     font-size: var(--size-xl);
-  }
-
-  .hero__btn {
-    font-size: var(--size-base);
   }
 }
 
