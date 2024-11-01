@@ -23,7 +23,7 @@
 }
 
 .mobile-nav__link {
-  font-size: var(--size-lg);
+  font-size: var(--size-xl);
   font-weight: 600;
   text-decoration: none;
   color: var(--clr-light);
@@ -53,7 +53,7 @@
 }
 
 .mobile-nav__signin {
-  font-size: var(--size-lg);
+  font-size: var(--size-xl);
   font-weight: 600;
   text-decoration: none;
   color: var(--clr-light);
@@ -67,7 +67,7 @@
 
 .mobile-nav__btn {
   letter-spacing: -0.05em;
-  font-size: var(--size-lg);
+  font-size: var(--size-xl);
 }
 
 /* md-screens */
