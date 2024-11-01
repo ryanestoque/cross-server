@@ -53,14 +53,6 @@ const mobileNav = () => {
     document.body.style.overflowY = "auto";
   });
 
-  mobileNavBtn.addEventListener('click', () => {
-    headerOpenBtn.style.display = "inline";
-    headerCloseBtn.style.display = "none";
-    isMobileNavOpened = false;
-    mobileNav.style.display = "none";
-    document.body.style.overflowY = "auto";
-  });
-
   mobileNav.addEventListener('click', () => {
     headerOpenBtn.style.display = "inline";
     headerCloseBtn.style.display = "none";
