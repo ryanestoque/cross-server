@@ -6,7 +6,6 @@ const mobileNav = () => {
   const headerTitle = document.querySelector(".header__title");
   const mobileLinks = document.querySelectorAll(".mobile-nav__link");
   const mobileNavCart = document.querySelector(".mobile-nav__cart");
-  const mobileNavBtn = document.querySelector(".mobile-nav__btn");
 
   let isMobileNavOpened = false;
 
@@ -39,7 +38,7 @@ const mobileNav = () => {
 
   headerTitle.addEventListener('click', () => {
     headerOpenBtn.style.display = "inline";
-      headerCloseBtn.style.display = "none";
+    headerCloseBtn.style.display = "none";
     isMobileNavOpened = false;
     mobileNav.style.display = "none";
     document.body.style.overflowY = "auto";
@@ -47,7 +46,7 @@ const mobileNav = () => {
 
   mobileNavCart.addEventListener('click', () => {
     headerOpenBtn.style.display = "inline";
-      headerCloseBtn.style.display = "none";
+    headerCloseBtn.style.display = "none";
     isMobileNavOpened = false;
     mobileNav.style.display = "none";
     document.body.style.overflowY = "auto";
