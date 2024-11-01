@@ -18,7 +18,7 @@
 
 .header__title {
   color: var(--clr-light);
-  font-size: var(--size-lg);
+  font-size: var(--size-base);
   font-weight: 700;
   text-decoration: none;
 }
@@ -70,7 +70,7 @@
   }
 
   .header__title {
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
   }
 }
 
@@ -99,12 +99,10 @@
   
   .header__link:hover {
     color: var(--clr-rose600);
-    font-weight: 600;
   }
 
   .active {
     color: var(--clr-rose600);
-    font-weight: 600;
   }
 
   /* .header__link:active {
@@ -119,7 +117,7 @@
   }
   
   .header__cart {
-    display: block;
+    display: none;
     color: var(--clr-light);
     width: var(--size-2xl);
     height: var(--size-2xl);
@@ -135,8 +133,23 @@
     color: var(--clr-light);
   } */
   
-  .header__login {
-    font-size: var(--size-xs);
+  .header__signin {
+    color: var(--clr-light);
+    font-size: var(--size-sm);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    transition: 0.3s color;
+    margin-right: 1.5em;
+  }
+
+  .header__signin:hover {
+    color: var(--clr-rose600);
+  }
+
+  .header__signup {
+    letter-spacing: -0.05em;
+    font-size: var(--size-sm);
   }
 
   .header__bars {
@@ -154,11 +167,7 @@
   }
 
   .header__title {
-    font-size: var(--size-2xl);
-  }
-
-  .header__link {
-    font-size: var(--size-base);
+    font-size: var(--size-xl);
   }
   
   .header__cart {
@@ -166,25 +175,49 @@
     height: var(--size-3xl);
     margin-right: 1.5em;
   }
-  
-  .header__login {
-    font-size: var(--size-sm);
-  }
 }
 
 /* xl-screens */
 @media (min-width: 1280px) {
+  .header__title {
+    font-size: var(--size-2xl);
+  }
+
   .header__nav {
     max-width: 1280px;
   }
 
   .header__link {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
+  }
+
+  .header__signin {
+    font-size: var(--size-base);
+  }
+
+  .header__signup {
+    font-size: var(--size-base);
   }
 }
 
 /* 2xl-screens */
 @media (min-width: 1536px) {
+  .header__title {
+    font-size: var(--size-2xl);
+  }
+
+  .header__link {
+    font-size: var(--size-lg);
+  }
+
+  .header__signin {
+    font-size: var(--size-lg);
+  }
+
+  .header__signup {
+    font-size: var(--size-lg);
+  }
+
   .header__nav {
     max-width: 1536px;
   }

@@ -6,8 +6,10 @@ import '../styles/components/hero.css';
 import '../styles/components/marquee.css';
 import '../styles/components/about.css';
 import '../styles/components/mobile-nav.css';
-// IMPORT NEXT CSS BELOW
 
+// IMPORT NEXT CSS BELOW
+import '../styles/components/sign-in.css';
+import '../styles/components/sign-up.css';
 
 // CSS UTILS
 import '../styles/utils.css';

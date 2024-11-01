@@ -4,10 +4,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'src/pages/index.html',
+        main: 'index.html',
         signin: 'src/pages/sign-in.html',
-        signup: 'src/pages/sign-up.html'
-      }
-    }
-  }
+        signup: 'src/pages/sign-up.html',
+      },
+    },
+  },
 });

@@ -76,6 +76,27 @@
   border: solid 2px var(--clr-light);
 } */
 
+.btn-3 {
+  border: solid 2px transparent;
+  background-color: transparent;
+  padding: 0.75em 1.125em;
+  color: var(--clr-light);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn-3:hover {
+  color: var(--clr-rose600);
+  border: solid 2px transparent;
+}
+
+/* .btn-3:active {
+  color: var(--clr-light);
+  border: solid 2px var(--clr-light);
+} */
+
 .container {
   width: 100%;
   margin-left: auto;

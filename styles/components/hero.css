@@ -24,8 +24,8 @@
 }
 
 .hero__btn {
-  text-transform: capitalize;
   font-size: var(--size-sm);
+  letter-spacing: -0.05em;
 }
 
 /* xs-screens */
@@ -52,16 +52,15 @@
     max-width: 60ch;
     font-size: var(--size-xl);
   }
-  
+
   .hero__btn {
-    text-transform: capitalize;
     font-size: var(--size-base);
   }
 }
 
 /* md-screens */
 @media (min-width: 768px) {
-
+  
 }
 
 /* lg-screens */
@@ -78,10 +77,9 @@
     max-width: 60ch;
     font-size: var(--size-xl);
   }
-  
+
   .hero__btn {
-    text-transform: capitalize;
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 }
 
@@ -101,8 +99,7 @@
   }
   
   .hero__btn {
-    text-transform: capitalize;
-    font-size: var(--size-lg);
+    font-size: var(--size-xl);
   }
 }
 
@@ -120,10 +117,5 @@
   .hero__desc {
     max-width: 60ch;
     font-size: var(--size-2xl);
-  }
-  
-  .hero__btn {
-    text-transform: capitalize;
-    font-size: var(--size-xl);
   }
 }

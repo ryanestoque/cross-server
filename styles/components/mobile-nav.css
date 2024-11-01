@@ -38,10 +38,11 @@
 .mobile-nav__link-line {
   border: solid 1px var(--clr-light);
   padding-right: 3em;
+  margin-bottom: -2em;
 }
 
 .mobile-nav__cart {
-  display: block;
+  display: none;
   width: var(--size-3xl);
   height: var(--size-3xl);
   color: var(--clr-light);
@@ -51,8 +52,21 @@
   color: var(--clr-rose600);
 }
 
+.mobile-nav__signin {
+  font-size: var(--size-base);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--clr-light);
+  letter-spacing: -0.05em;
+  transition: color 0.3s;
+}
+
+.mobile-nav__signin:hover {
+  color: var(--clr-rose600);
+}
+
 .mobile-nav__btn {
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
 }
 
 /* md-screens */
