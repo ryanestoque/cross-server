@@ -4,7 +4,7 @@ const lazyLoading = () => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if(entry.isIntersecting){
-        const images = document.querySelectorAll(".marquee__img");
+        const images = document.querySelectorAll(".lazy__img");
         images.forEach(img => {
           img.src = img.dataset.src;
         });
@@ -13,6 +13,8 @@ const lazyLoading = () => {
         observer.unobserve(entry.target);
       }
     });
+  }, {
+    threshold: 0.35
   });
   
   lazyContent.forEach(content => {

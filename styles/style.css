@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  background-position: 0px -5px;
+  background-position: -2px -5px;
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.15) 2px, transparent 2px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 2px, transparent 2px);
@@ -64,5 +64,20 @@ button {
 }
 
 a {
-  color: var(--clr-dark);
+  color: var(--clr-light);
+  cursor: pointer;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-rose600);
+  outline: 1px solid var(--clr-rose600);
 }

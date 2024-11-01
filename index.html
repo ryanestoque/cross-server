@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <title>Cross-Server</title>
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <nav class="header__nav">
         <a href="#home" class="header__title">
           CROSS-SERVER
@@ -29,8 +29,8 @@
             </a>
           </li>
           <li>
-            <a class="header__link" href="#contact">
-              Contact
+            <a class="header__link" href="#team">
+              Team
             </a>
           </li>
           <li class="header__line"></li>
@@ -47,15 +47,18 @@
             </button>
           </li>
           <li>
-            <button class="header__login btn-2">
+            <a href="#" class="header__login btn-2">
               Sign in
-            </button>
+            </a>
           </li>
         </ul>
         <button class="header__bars">
+          <!-- Header hamburger button -->
           <svg 
+            class="header__bars-open"
             xmlns="http://www.w3.org/2000/svg" 
-            fill="none" viewBox="0 0 24 24" 
+            fill="none" 
+            viewBox="0 0 24 24" 
             stroke-width="1.5" 
             stroke="currentColor" 
           >
@@ -65,10 +68,63 @@
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" 
             />
           </svg>
-          
+
+          <!-- Header X button -->
+          <svg 
+            class="header__bars-close"
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            >
+            <path 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              d="M6 18 18 6M6 6l12 12" 
+            />
+          </svg>
         </button>
       </nav>
     </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a href="#home" class="mobile-nav__link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="mobile-nav__link">About</a>
+          </li>
+          <li>
+            <a href="#menus" class="mobile-nav__link">Menus</a>
+          </li>
+          <li>
+            <a href="#team" class="mobile-nav__link">Team</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button class="mobile-nav__cart">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn-2">
+              Sign in
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
     <main>
       <section class="hero container">
         <h1 class="hero__heading">
@@ -82,19 +138,30 @@
           BROWSE MEALS
         </a>
       </section>
-      <section class="marquee section container lazy loading">
+      <div class="marquee section container lazy loading">
         <h1 class="marquee__title">Featured Stalls</h1>
         <div class="marquee__wrapper">
-          <img class="marquee__img amara-snack-bar__img" data-src="/amara-snack-bar-logo.png" alt="Amarah's Snack Bar" style="--n: 1">
-          <img class="marquee__img cafe-ferrer__img" data-src="/cafe-ferrer-logo.png" alt="Cafe Ferrer" style="--n: 2">
-          <img class="marquee__img chicks-ahoy__img" data-src="/chicks-ahoy-logo.jpg" alt="Chicks Ahoy" style="--n: 3">
-          <img class="marquee__img coffito__img" data-src="/coffito-logo.jpg" alt="Coffito" style="--n: 4">
-          <img class="marquee__img kuya-jong__img" data-src="/kuya-jong-logo.jpg" alt="Kuya Jong's Lutong Bahay" style="--n: 5">
-          <img class="marquee__img santino__img" data-src="/santino-logo.jpg" alt="Santino's" style="--n: 6">
-          <img class="marquee__img top-spatula__img" alt="Top Spatula" data-src="/top-spatula-logo.jpg" style="--n: 7">
-          <img class="marquee__img titas-catering__img" alt="Tita's Catering Services" data-src="/titas-catering-logo.png" style="--n: 8">
-          <img class="marquee__img waffle-time__img" alt="Waffle Time" data-src="/waffle-time-logo.jpg" style="--n: 9">
-          <img class="marquee__img zekiah-sisig__img" alt="Zekiah's Sisig Corner" data-src="/zekiah-sisig-logo.jpg" style="--n: 10">
+          <img class="marquee__img amara-snack-bar__img lazy__img" data-src="/amara-snack-bar-logo.png" alt="Amarah's Snack Bar" style="--n: 1">
+          <img class="marquee__img cafe-ferrer__img lazy__img" data-src="/cafe-ferrer-logo.png" alt="Cafe Ferrer" style="--n: 2">
+          <img class="marquee__img chicks-ahoy__img lazy__img" data-src="/chicks-ahoy-logo.jpg" alt="Chicks Ahoy" style="--n: 3">
+          <img class="marquee__img coffito__img lazy__img" data-src="/coffito-logo.jpg" alt="Coffito" style="--n: 4">
+          <img class="marquee__img kuya-jong__img lazy__img" data-src="/kuya-jong-logo.jpg" alt="Kuya Jong's Lutong Bahay" style="--n: 5">
+          <img class="marquee__img santino__img lazy__img" data-src="/santino-logo.jpg" alt="Santino's" style="--n: 6">
+          <img class="marquee__img top-spatula__img lazy__img" alt="Top Spatula" data-src="/top-spatula-logo.jpg" style="--n: 7">
+          <img class="marquee__img titas-catering__img lazy__img" alt="Tita's Catering Services" data-src="/titas-catering-logo.png" style="--n: 8">
+          <img class="marquee__img waffle-time__img lazy__img" alt="Waffle Time" data-src="/waffle-time-logo.jpg" style="--n: 9">
+          <img class="marquee__img zekiah-sisig__img lazy__img" alt="Zekiah's Sisig Corner" data-src="/zekiah-sisig-logo.jpg" style="--n: 10">
+        </div>
+      </div>
+      <section id="about" class="about container section lazy loading">
+        <div class="about__content">
+          <h1 class="about__title">HCDC Canteen</h1>
+          <p class="about__description">
+            Reopened in 2023, the Holy Cross of Davao College Canteen has been a spot for Holy Crossians, offering a variety of delicious and affordable meals served by our partnered food stalls. The canteen aims to provide a convenient, welcoming space for the school community to enjoy breaks and refuel with a wide selection of snacks, beverages, and hearty dishes. With its cozy ambiance and improved services, the canteen has become more than just a place to eat, it's a hub for socializing and relaxation between classes.
+          </p>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img lazy__img" data-src="/hcdc_canteen.jpg" alt="HCDC Canteen">
         </div>
       </section>
     </main>

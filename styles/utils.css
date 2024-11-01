@@ -71,10 +71,10 @@
   border: solid 2px var(--clr-rose600);
 }
 
-.btn-2:active {
+/* .btn-2:active {
   color: var(--clr-light);
   border: solid 2px var(--clr-light);
-}
+} */
 
 .container {
   width: 100%;
@@ -90,12 +90,12 @@
 
 .loading {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(30px);
 }
 
 .loaded {
   opacity: 1;
-  transform: translateY(-10px);
+  transform: translateY(0);
   transition: 1s ease-in-out;
 }
 

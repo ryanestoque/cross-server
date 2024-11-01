@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 8rem;
   animation: slideUp 1s ease-in-out;
 }
 
@@ -28,17 +28,8 @@
   font-size: var(--size-sm);
 }
 
-/* xxs-screens */
-@media (min-width: 320px) {
-
-}
-
 /* xs-screens */
-@media (min-width: 475px) {
-  .hero {
-    gap: 1rem;
-  }
-  
+@media (min-width: 475px) {  
   .hero__heading {
     font-size: var(--size-4xl);
   }
@@ -70,13 +61,15 @@
 
 /* md-screens */
 @media (min-width: 768px) {
-  .hero {
-    margin-top: 4rem;
-  }
+
 }
 
 /* lg-screens */
 @media (min-width: 1024px) {  
+  .hero {
+    margin-top: 10rem;
+  }
+
   .hero__heading {
     font-size: var(--size-6xl);
   }
@@ -116,7 +109,8 @@
 /* 2xl-screens */
 @media (min-width: 1536px) {
   .hero {
-    gap: 2.5rem;
+    margin-top: 12rem;
+    gap: 2rem;
   }
 
   .hero__heading {
