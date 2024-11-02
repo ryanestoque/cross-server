@@ -30,6 +30,7 @@ html {
 .hero__btn {
   font-size: var(--size-base);
   letter-spacing: -0.05em;
+  text-transform: capitalize;
 }
 
 /* xs-screens */
@@ -39,10 +40,7 @@ html {
   }
 
   .hero__desc {
-    max-width: 60ch;
     font-size: var(--size-lg);
-    color: var(--clr-light);
-    font-weight: 500;
   }
 }
 
@@ -53,7 +51,6 @@ html {
   }
   
   .hero__desc {
-    max-width: 60ch;
     font-size: var(--size-xl);
   }
 }
@@ -78,7 +75,6 @@ html {
   }
   
   .hero__desc {
-    max-width: 60ch;
     font-size: var(--size-xl);
   }
 
@@ -98,7 +94,6 @@ html {
   }
   
   .hero__desc {
-    max-width: 60ch;
     font-size: var(--size-xl);
   }
   
@@ -123,7 +118,6 @@ html {
   }
   
   .hero__desc {
-    max-width: 60ch;
     font-size: var(--size-2xl);
   }
 }
