@@ -42,7 +42,8 @@
 .mobile-nav__link-line {
   border: solid 1px var(--clr-light);
   padding-right: 3em;
-  margin-bottom: -1em;
+  margin-top: -0.5em;
+  margin-bottom: -1.5em;
 }
 
 .mobile-nav__cart {
@@ -57,7 +58,7 @@
 }
 
 .mobile-nav__signin {
-  font-size: var(--size-lg);
+  font-size: var(--size-base);
   font-weight: 600;
   text-decoration: none;
   color: hsl(224, 76%, 78%);
@@ -71,11 +72,7 @@
 
 .mobile-nav__btn {
   letter-spacing: -0.05em;
-  font-size: var(--size-lg);
-}
-
-.mobile-nav__btn-container {
-  margin-top: 0.5em;
+  font-size: var(--size-base);
 }
 
 /* md-screens */
