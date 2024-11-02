@@ -75,6 +75,10 @@
   font-size: var(--size-base);
 }
 
+.mobile-nav__btn-container {
+  margin-top: 0.25em;
+}
+
 /* md-screens */
 /* @media (min-width: 768px) {
 

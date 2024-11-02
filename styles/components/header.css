@@ -125,7 +125,7 @@
   } */
   
   .header__signin {
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
     text-decoration: none;
     font-weight: 600;
     letter-spacing: -0.05em;
@@ -139,7 +139,7 @@
 
   .header__signup {
     letter-spacing: -0.05em;
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
   }
 
   .header__bars {
@@ -182,11 +182,11 @@
   }
 
   .header__signin {
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
   }
 
   .header__signup {
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
   }
 }
 
