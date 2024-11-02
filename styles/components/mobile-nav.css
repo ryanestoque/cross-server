@@ -26,19 +26,23 @@
   font-size: var(--size-lg);
   font-weight: 600;
   text-decoration: none;
-  color: var(--clr-light);
+  color: hsl(224, 76%, 78%);
   letter-spacing: -0.05em;
   transition: color 0.3s;
 }
 
+.active {
+  color: var(--clr-light);
+}
+
 .mobile-nav__link:hover {
-  color: var(--clr-rose600);
+  color: var(--clr-light);
 }
 
 .mobile-nav__link-line {
   border: solid 1px var(--clr-light);
   padding-right: 3em;
-  margin-bottom: -2em;
+  margin-bottom: -1em;
 }
 
 .mobile-nav__cart {
@@ -56,7 +60,7 @@
   font-size: var(--size-lg);
   font-weight: 600;
   text-decoration: none;
-  color: var(--clr-light);
+  color: hsl(224, 76%, 78%);
   letter-spacing: -0.05em;
   transition: color 0.3s;
 }
@@ -68,6 +72,10 @@
 .mobile-nav__btn {
   letter-spacing: -0.05em;
   font-size: var(--size-lg);
+}
+
+.mobile-nav__btn-container {
+  margin-top: 0.5em;
 }
 
 /* md-screens */

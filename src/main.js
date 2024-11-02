@@ -18,8 +18,10 @@ import '../styles/utils.css';
 import header from './utils/header';
 import mobileNav from './utils/mobile-nav.js';
 import lazyLoading from './utils/lazy-loading.js';
+import scrollspy from './utils/scrollspy';
 
 // JAVASCRIPT FUNCTION CALLS
 mobileNav();
 lazyLoading();
 header();
+scrollspy();

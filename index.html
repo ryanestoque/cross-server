@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" id="home">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
         </a>
         <ul class="header__buttons">
           <li>
-            <a class="header__link" href="#home">
+            <a class="header__link active" href="#home">
               Home
             </a>
           </li>
@@ -47,7 +47,7 @@
             </button>
           </li>
           <li>
-            <a href="src/pages/sign-in.html" class="header__signin">
+            <a href="src/pages/sign-in.html" class="header__signin btn-2">
               Sign in
             </a>
           </li>
@@ -97,7 +97,7 @@
       <nav>
         <ul class="mobile-nav__menu">
           <li>
-            <a href="#home" class="mobile-nav__link">Home</a>
+            <a href="#home" class="mobile-nav__link active">Home</a>
           </li>
           <li>
             <a href="#about" class="mobile-nav__link">About</a>
@@ -122,11 +122,11 @@
             </button>
           </li>
           <li>
-            <a href="src/pages/sign-in.html" class="mobile-nav__signin">
+            <a href="src/pages/sign-in.html" class="mobile-nav__signin btn-2">
               Sign in
             </a>
           </li>
-          <li>
+          <li class="mobile-nav__btn-container">
             <a href="src/pages/sign-up.html" class="mobile-nav__btn btn">
               Sign up
             </a>
@@ -136,7 +136,7 @@
     </div>
     <!-- End of Mobile Navigation -->
     <main>
-      <section class="hero container">
+      <section id="home" class="hero container">
         <h1 class="hero__heading">
           On-the-go canteen 
           for Holy Crossians
