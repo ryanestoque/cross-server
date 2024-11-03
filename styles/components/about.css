@@ -13,6 +13,7 @@
 .about__title {
   color: var(--clr-light);
   font-size: var(--size-3xl);
+  letter-spacing: 0em;
 }
 
 .about__description {
