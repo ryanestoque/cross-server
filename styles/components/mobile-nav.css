@@ -26,7 +26,7 @@
   font-size: var(--size-lg);
   font-weight: 600;
   text-decoration: none;
-  color: hsl(224, 76%, 78%);
+  color: var(--clr-blue700-light);
   letter-spacing: -0.05em;
   transition: color 0.3s;
 }
