@@ -90,6 +90,10 @@
 
 /* lg-screens */
 @media (min-width: 1024px) {
+  .teaser {
+    gap: 2rem;
+  }
+
   .teaser__title {
     font-size: var(--size-5xl);
   }
@@ -99,38 +103,15 @@
   }
 
   .teaser__card-container {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    gap: 1rem;
-    width: 100%;
-    margin-top: 1rem;
   }
   
   .teaser__food {
-    background-color: #fff;
-    width: 100%;
     aspect-ratio: 1 / 1;
-  }
-
-  .food1 {
-    background-image: url(/teaser-card/kuya-jong.webp);
-    background-size: cover;
   }
   
   .food2 {
-    background-image: url(/teaser-card/waffle-time-2.webp);
     background-size: 300%;
-    background-position: 30%;
-  }
-  
-  .food3 {
-    background-image: url(/teaser-card/santinos.webp);
-    background-size: cover;
-  }
-  
-  .food4 {
-    background-image: url(/teaser-card/coffito.webp);
-    background-size: cover;
   }
 }
 
