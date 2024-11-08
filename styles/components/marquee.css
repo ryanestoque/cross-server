@@ -2,11 +2,11 @@
   text-align: center;
 }
 
-.marquee__title {
+/* .marquee__title {
   font-weight: 600;
   font-size: var(--size-xl);
   color: var(--clr-light);
-}
+} */
 
 .marquee__wrapper {
   margin-top: 1rem;

@@ -105,11 +105,11 @@ html {
     gap: 2rem;
   }
 
-  .hero__heading {
+  /* .hero__heading {
     font-size: var(--size-8xl);
   }
   
   .hero__desc {
     font-size: var(--size-2xl);
-  }
+  } */
 }

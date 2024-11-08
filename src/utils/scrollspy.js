@@ -4,10 +4,10 @@ const scrollspy = () => {
     const sections = document.querySelectorAll("section");
 
     window.addEventListener('scroll', () => {
-      const currentPosition = window.scrollY;
+      const currentPosition = window.scrollY + 250;
 
       sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
 
