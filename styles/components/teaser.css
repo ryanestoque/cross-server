@@ -41,12 +41,13 @@
 
 .food1 {
   background-image: url(/teaser-card/kuya-jong.webp);
+  background-position: 0% 0%;
   background-size: cover;
 }
 
 .food2 {
   background-image: url(/teaser-card/waffle-time-2.webp);
-  background-size: 300%;
+  background-size: 150%;
   background-position: 30%;
 }
 
@@ -109,6 +110,27 @@
     background-color: #fff;
     width: 100%;
     aspect-ratio: 1 / 1;
+  }
+
+  .food1 {
+    background-image: url(/teaser-card/kuya-jong.webp);
+    background-size: cover;
+  }
+  
+  .food2 {
+    background-image: url(/teaser-card/waffle-time-2.webp);
+    background-size: 300%;
+    background-position: 30%;
+  }
+  
+  .food3 {
+    background-image: url(/teaser-card/santinos.webp);
+    background-size: cover;
+  }
+  
+  .food4 {
+    background-image: url(/teaser-card/coffito.webp);
+    background-size: cover;
   }
 }
 
