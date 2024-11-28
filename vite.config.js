@@ -5,6 +5,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
+        signIn: './src/pages/sign-in.html',
         menu: './src/pages/menu.html',
       },
     },
