@@ -130,7 +130,6 @@
     font-weight: 600;
     letter-spacing: -0.05em;
     transition: 0.3s color;
-    margin-right: 1em;
   }
 
   .header__signin:hover {

@@ -101,7 +101,7 @@
   }
   
   .menu-header__line {
-    border: solid 1px var(--clr-light);
+    border: solid 1px var(--clr-blue700);
     padding-top: 1.5em;
     margin-left: 1.5em;
     margin-right: 1.5em;
@@ -130,7 +130,6 @@
     font-weight: 600;
     letter-spacing: -0.05em;
     transition: 0.3s color;
-    margin-right: 1em;
   }
 
   .menu-header__signin:hover {
