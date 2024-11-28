@@ -15,7 +15,6 @@ const scrollspy = () => {
           headerLinks.forEach((link) => {
             link.classList.remove("active");
           });
-
           mobileNavLinks.forEach((mlink) => {
             mlink.classList.remove("active");
           });

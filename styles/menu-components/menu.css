@@ -1,0 +1,24 @@
+.menu {
+  background-position: -2px -5px;
+  background-image: 
+    linear-gradient(to right, rgba(29, 78, 216, 0.35) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(29, 78, 216, 0.35) 2px, transparent 2px);
+  background-size: 75px 75px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--clr-light);
+}
+
+/* menu-scrollbar */
+
+.menu::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+.menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+ 
+.menu::-webkit-scrollbar-thumb {
+  background-color: var(--clr-blue700);
+  outline: 1px solid var(--clr-blue700);
+}

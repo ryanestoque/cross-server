@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://api.fontshare.com/v2/css?f[]=montserrat@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap" rel="stylesheet">
-    <title>Cross-Server</title>
+    <title>Home | Cross-Server</title>
   </head>
   <body>
     <header class="header">
@@ -48,14 +48,14 @@
           </li>
           <li>
             <a href="src/pages/sign-in.html" class="header__signin btn-2">
-              Sign in
+              Guest Login
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="src/pages/sign-up.html" class="header__signup btn">
               Sign up
             </a>
-          </li>
+          </li> -->
         </ul>
         <button class="header__bars">
           <!-- Header hamburger button -->
@@ -92,6 +92,7 @@
         </button>
       </nav>
     </header>
+
     <!-- Mobile Navigation -->
     <div class="mobile-nav">
       <nav>
@@ -123,18 +124,19 @@
           </li>
           <li>
             <a href="src/pages/sign-in.html" class="mobile-nav__signin btn-2">
-              Sign in
+              Guest Login
             </a>
           </li>
-          <li class="mobile-nav__btn-container">
+          <!-- <li class="mobile-nav__btn-container">
             <a href="src/pages/sign-up.html" class="mobile-nav__btn btn">
               Sign up
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>
     <!-- End of Mobile Navigation -->
+
     <main>
       <section id="home" class="hero container">
         <h1 class="hero__heading">
@@ -144,7 +146,7 @@
         <p class="hero__desc">
           Mabuhay ug madayaw! Cross-Server is a food-ordering website that exclusively accommodates Holy Crossians, catering a wide variety of foods and drinks directly served from HCDC’s canteen.
         </p>
-        <a class="hero__btn btn" href="#menu">
+        <a class="hero__btn btn" href="src/pages/menu.html">
           BROWSE MEALS
         </a>
       </section>
@@ -186,27 +188,51 @@
       <section id="menus" class="teaser container section lazy loading">
         <div class="teaser__heading">
           <h1 class="teaser__title">Crossians' Choice</h1>
-          <p class="teaser__desc">Canteen's best selling stalls</p>
+          <p class="teaser__desc">Canteen's best selling delights</p>
         </div>
         <div class="teaser__card-container">
           <div class="teaser__food food1 lazy__bg" data-bg="/teaser-card/kuya-jong.webp">
-
+            <div class="teaser__food-container">
+              <h1 class="teaser__food-title">Combo Meal</h1>
+              <h2 class="teaser__food-stall">Kuya Jong's</h2>
+            </div>
+            <p class="teaser__food-price">₱65.00</p>
           </div>
           <div class="teaser__food food2 lazy__bg" data-bg="/teaser-card/waffle-time-2.webp">
-
+            <div class="teaser__food-container">
+              <h1 class="teaser__food-title">American Hotdog</h1>
+              <h2 class="teaser__food-stall">Waffle Time</h2>
+            </div>
+            <p class="teaser__food-price">₱31.00</p>
           </div>
           <div class="teaser__food food3 lazy__bg" data-bg="/teaser-card/santinos.webp">
-
+            <div class="teaser__food-container">
+              <h1 class="teaser__food-title">Pepperoni Sorpresa</h1>
+              <h2 class="teaser__food-stall">Santino's</h2>
+            </div>
+            <p class="teaser__food-price">₱38.00</p>
           </div>
           <div class="teaser__food food4 lazy__bg" data-bg="/teaser-card/coffito.webp">
-
+            <div class="teaser__food-container">
+              <h1 class="teaser__food-title">Iced Coffee</h1>
+              <h2 class="teaser__food-stall">Coffito</h2>
+            </div>
+            <p class="teaser__food-price">₱40.00</p>
           </div>
         </div>
+        <a class="btn" href="src/pages/menu.html">
+          VIEW ALL STALLS
+        </a>
+      </section>
+      <section id="team" class="team container section lazy loading">
+
       </section>
     </main>
+
     <footer>
-      
+      <!-- content -->
     </footer>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

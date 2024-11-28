@@ -1,0 +1,128 @@
+.stalls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1.5rem;
+}
+
+.stalls__title {
+  text-align: center;
+  font-size: var(--size-3xl);
+  color: var(--clr-blue700);
+}
+
+.stalls__grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.stalls__stall {
+  width: 100%;
+  border: solid 4px var(--clr-blue700);
+  background-color: transparent;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  cursor: pointer;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.stalls__stall:hover {
+  transform: scale(1.02);
+}
+
+.stalls__stall:active {
+  transform: none;
+}
+
+.stalls__all {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stalls__all::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 12px;
+  transition: opacity 0.3s;
+}
+
+.stalls__all-text {
+  font-size: var(--size-base);
+  color: var(--clr-light);
+  z-index: 2;
+  padding: 1rem;
+}
+
+/* xxs-screens */
+@media (min-width: 320px) {
+  .stalls__all-text {
+    font-size: var(--size-2xl);
+  }
+}
+
+/* xs-screens */
+@media (min-width: 475px) {
+  .stalls__all-text {
+    font-size: var(--size-3xl);
+  }
+}
+
+/* sm-screens */
+@media (min-width: 640px) {
+  .stalls__title {
+    font-size: var(--size-4xl);
+    color: var(--clr-blue700);
+  }
+  
+  .stalls__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* md-screens */
+@media (min-width: 768px) {
+  
+}
+
+/* lg-screens */
+@media (min-width: 1024px) {
+  .stalls__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .stalls__all-text {
+    font-size: var(--size-4xl);
+  }
+}
+
+/* xl-screens */
+@media (min-width: 1280px) {
+  .stalls__title {
+    font-size: var(--size-5xl);
+    color: var(--clr-blue700);
+  }
+
+}
+
+/* 2xl-screens */
+@media (min-width: 1536px) {
+  .stalls__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

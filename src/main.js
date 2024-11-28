@@ -1,26 +1,32 @@
 // CSS IMPORTS
 import '../styles/modern-normalize.css';
 import '../styles/style.css';
-import '../styles/components/header.css';
-import '../styles/components/hero.css';
-import '../styles/components/marquee.css';
-import '../styles/components/about.css';
-import '../styles/components/mobile-nav.css';
-import '../styles/components/teaser.css';
-import '../styles/components/sign-in.css';
-import '../styles/components/sign-up.css';
+import '../styles/home-components/header.css';
+import '../styles/home-components/hero.css';
+import '../styles/home-components/marquee.css';
+import '../styles/home-components/about.css';
+import '../styles/home-components/mobile-nav.css';
+import '../styles/home-components/teaser.css';
+import '../styles/account-components/sign-in.css';
+import '../styles/menu-components/menu.css';
+import '../styles/menu-components/menu-header.css';
+import '../styles/menu-components/menu-mobile-nav.css';
+import '../styles/menu-components/menu-stalls.css';
+import '../styles/menu-components/menu-stalls-foods.css';
 
 // CSS UTILS
 import '../styles/utils.css';
 
 // JAVASCRIPT IMPORTS
 import header from './utils/header';
-import mobileNav from './utils/mobile-nav.js';
-import lazyLoading from './utils/lazy-loading.js';
+import mobileNav from './utils/mobile-nav';
+import menuMobileNav from './utils/menu-mobile-nav';
+import lazyLoading from './utils/lazy-loading';
 import scrollspy from './utils/scrollspy';
 
 // JAVASCRIPT FUNCTION CALLS
 mobileNav();
+menuMobileNav();
 lazyLoading();
 header();
 scrollspy();
