@@ -31,7 +31,7 @@
   width: 90%;
   height: 100%;
   grid-template-columns: repeat(1, 1fr);
-  place-content: center;
+  margin: 0 auto;
 }
 
 .teaser__food {
