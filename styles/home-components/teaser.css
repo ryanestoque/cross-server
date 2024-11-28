@@ -41,7 +41,7 @@
   flex-direction: column;
   position: relative;
   width: 100%;
-  border: solid 4px var(--clr-rose600);
+  border: solid 2px var(--clr-rose600);
   border-radius: 16px;
   background-color: #fff;
   aspect-ratio: 21 / 9;
