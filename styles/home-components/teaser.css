@@ -87,7 +87,7 @@
 
 .teaser__food-title {
   color: var(--clr-light);
-  font-size: var(--size-3xl);
+  font-size: var(--size-2xl);
   font-weight: 600;
 }
 
@@ -158,7 +158,7 @@
   }
 
   .teaser__food-title {
-    font-size: var(--size-4xl);
+    font-size: var(--size-3xl);
   }
 
   .teaser__food-stall {
@@ -189,7 +189,7 @@
   } */
 
   .teaser__food-title {
-    font-size: var(--size-5xl);
+    font-size: var(--size-4xl);
   }
 
   .teaser__food-stall {
@@ -220,7 +220,7 @@
   }
 
   .teaser__food-title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-2xl);
   }
 
   .teaser__food-stall {
@@ -243,7 +243,7 @@
   }
 
   .teaser__food-title {
-    font-size: var(--size-4xl);
+    font-size: var(--size-3xl);
   }
 
   .teaser__food-stall {
