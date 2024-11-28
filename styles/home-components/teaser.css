@@ -28,9 +28,10 @@
 .teaser__card-container {
   display: grid;
   gap: 1rem;
-  width: 100%;
+  width: 90%;
   height: 100%;
   grid-template-columns: repeat(1, 1fr);
+  place-content: center;
 }
 
 .teaser__food {
@@ -118,6 +119,10 @@
 
 .teaser__food:hover::before, .teaser__food:hover .teaser__food-container, .teaser__food:hover .teaser__food-price {
   opacity: 1;
+}
+
+.teaser__btn {
+  font-size: var(--size-xs);
 }
 
 .food1 {
@@ -230,6 +235,10 @@
   
   .teaser__food-price {
     font-size: var(--size-2xl);
+  }
+
+  .teaser__btn {
+    font-size: var(--size-sm);
   }
 }
 
