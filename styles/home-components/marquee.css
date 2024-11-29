@@ -35,7 +35,7 @@
   height: 96px;
   width: 96px;
   border-radius: 16px;
-  left: max(calc(96px * 10), 100%);
+  left: max(calc(96px * 11), 100%);
   animation-name: scrollLeft;
   animation-duration: 30s;
   animation-timing-function: linear;
@@ -43,43 +43,47 @@
 }
 
 .amara-snack-bar__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .cafe-ferrer__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .chicks-ahoy__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .coffito__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .kuya-jong__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .santino__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .top-spatula__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .titas-catering__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .waffle-time__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 .zekiah-sisig__img {
-  animation-delay: calc(30s / 10 * (10 - var(--n)) * -1);
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
+}
+
+.colil__img {
+  animation-delay: calc(30s / 11 * (11 - var(--n)) * -1);
 }
 
 @keyframes scrollLeft {
@@ -97,7 +101,7 @@
   .marquee__img {
     height: 128px;
     width: 128px;
-    left: max(calc(128px * 10), 100%);
+    left: max(calc(128px * 11), 100%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
@@ -127,7 +131,7 @@
   .marquee__img {
     height: 160px;
     width: 160px;
-    left: max(calc(160px * 10), 100%);
+    left: max(calc(160px * 11), 100%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
@@ -143,10 +147,6 @@
 
 /* lg-screens */
 @media (min-width: 1024px) {
-  .marquee__title {
-    font-size: var(--size-3xl);
-  }
-
   .marquee__wrapper {
     height: 192px;
   }
@@ -154,7 +154,7 @@
   .marquee__img {
     height: 192px;
     width: 192px;
-    left: max(calc(192px * 10), 100%);
+    left: max(calc(192px * 11), 100%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
