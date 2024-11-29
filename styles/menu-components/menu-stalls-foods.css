@@ -200,6 +200,18 @@
 
 /* 2xl-screens */
 @media (min-width: 1536px) {
+  .stalls-go-back-six {
+    font-size: var(--size-2xl);
+    grid-column: span 6;
+    margin-top: 1rem;
+  }
+
+  .stalls-go-back-three {
+    font-size: var(--size-2xl);
+    grid-column: span 6;
+    margin-top: 1rem;
+  }
+  
   .stalls-food__grid {
     grid-template-columns: repeat(6, 1fr);
   }
