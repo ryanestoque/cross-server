@@ -14,11 +14,13 @@
 }
 
 .teaser__title {
+  text-align: center;
   color: var(--clr-light);
   font-size: var(--size-3xl);
 }
 
 .teaser__desc {
+  text-align: center;
   max-width: 45ch;
   color: var(--clr-light);
   font-size: var(--size-base);
@@ -128,7 +130,9 @@
 
 /* xxs-screens */
 @media (min-width: 320px) {
-
+  .teaser__food-title {
+    font-size: var(--size-3xl);
+  }
 }
 
 
@@ -143,11 +147,11 @@
   }
 
   .teaser__food-title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-4xl);
   }
 
   .teaser__food-stall {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 
   .teaser__food-price {
@@ -158,7 +162,13 @@
 
 /* sm-screens */
 @media (min-width: 640px) {
+  .teaser__food-title {
+    font-size: var(--size-5xl);
+  }
 
+  .teaser__food-stall {
+    font-size: var(--size-xl);
+  }
 }
 
 /* md-screens */
@@ -176,7 +186,7 @@
   }
 
   .teaser__food-stall {
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
   }
 
   .teaser__food-price {
@@ -203,11 +213,11 @@
   }
 
   .teaser__food-title {
-    font-size: var(--size-2xl);
+    font-size: var(--size-3xl);
   }
 
   .teaser__food-stall {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
   
   .teaser__food-price {
@@ -230,11 +240,11 @@
   }
 
   .teaser__food-title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-4xl);
   }
 
   .teaser__food-stall {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 
   .teaser__food-price {
@@ -253,7 +263,7 @@
   }
 
   .teaser__food-stall {
-    font-size: var(--size-lg);
+    font-size: var(--size-xl);
   }
 
   .teaser__food-price {
