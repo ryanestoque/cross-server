@@ -11,6 +11,7 @@
   text-align: center;
   font-size: var(--size-3xl);
   color: var(--clr-blue700);
+  letter-spacing: -0.05em;
 }
 
 .stalls__grid {
@@ -102,6 +103,10 @@
 
 /* lg-screens */
 @media (min-width: 1024px) {
+  /* .stalls {
+    margin-top: 8rem;
+  } */
+
   .stalls__grid {
     grid-template-columns: repeat(4, 1fr);
   }

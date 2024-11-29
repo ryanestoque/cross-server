@@ -20,8 +20,6 @@ const lazyLoading = () => {
         observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.25
   });
   
   lazyContent.forEach(content => {

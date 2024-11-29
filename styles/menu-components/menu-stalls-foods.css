@@ -7,6 +7,12 @@
 }
 
 .stalls-food {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
   width: 100%;
   border: solid 2px var(--clr-blue700);
   background-color: var(--clr-light);
@@ -17,8 +23,46 @@
   transition: all 0.3s;
 }
 
+.stalls__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.5rem;
+  border-radius: 8px;
+  width: var(--size-xl);
+}
+
 .stalls-food:hover {
   transform: scale(1.02);
+}
+
+
+.stalls-food__img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.stalls-food__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.stalls-food__title {
+  font-size: var(--size-lg);
+  color: var(--clr-blue700);
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
+.stalls-food__price {
+  font-size: var(--size-sm);
+  color: var(--clr-blue700);
+  font-weight: 500;
+  text-align: center;
 }
 
 .stalls-go-back-three {
@@ -52,16 +96,32 @@
 
 /* xxs-screens */
 @media (min-width: 320px) {
+  .stalls__logo {
+    width: var(--size-4xl);
+  }
 
+  .stalls-food__title {
+    font-size: var(--size-2xl);
+  }
+  
+  .stalls-food__price {
+    font-size: var(--size-lg);
+  }
 }
 
 /* xs-screens */
 @media (min-width: 475px) {
-
+  .stalls__logo {
+    width: var(--size-5xl);
+  }
 }
 
 /* sm-screens */
 @media (min-width: 640px) {
+  .stalls__logo {
+    width: var(--size-3xl);
+  }
+
   .stalls-go-back-six {
     font-size: var(--size-xl);
     grid-column: span 2;
@@ -82,6 +142,14 @@
 
 /* md-screens */
 @media (min-width: 768px) {
+  .stalls-food__title {
+    font-size: var(--size-xl);
+  }
+  
+  .stalls-food__price {
+    font-size: var(--size-base);
+  }
+
   .stalls-food__grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -120,6 +188,13 @@
 
 /* xl-screens */
 @media (min-width: 1280px) {
+  .stalls-food__title {
+    font-size: var(--size-2xl);
+  }
+  
+  .stalls-food__price {
+    font-size: var(--size-lg);
+  }
 
 }
 
