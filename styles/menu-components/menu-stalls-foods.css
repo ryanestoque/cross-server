@@ -36,6 +36,9 @@
   transform: scale(1.02);
 }
 
+.stalls-food:active {
+  transform: none;
+}
 
 .stalls-food__img {
   aspect-ratio: 4 / 3;
@@ -200,7 +203,14 @@
 
 /* 2xl-screens */
 @media (min-width: 1536px) {
-  .stalls-go-back-six {
+  .stalls-food__title {
+    font-size: var(--size-3xl);
+  }
+  
+  .stalls-food__price {
+    font-size: var(--size-xl);
+  }
+  /* .stalls-go-back-six {
     font-size: var(--size-2xl);
     grid-column: span 6;
     margin-top: 1rem;
@@ -214,5 +224,5 @@
   
   .stalls-food__grid {
     grid-template-columns: repeat(6, 1fr);
-  }
+  } */
 }

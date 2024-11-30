@@ -12,7 +12,7 @@ const header = () => {
         header.classList.remove("menu-header-sticky");
       }
     });
-  } else {
+  } else if (!document.body.classList.contains("menu") && !document.body.classList.contains("sign-in")) {
       const header = document.querySelector(".header");
     
       window.addEventListener("scroll", () => {

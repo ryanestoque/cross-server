@@ -70,7 +70,7 @@ const mobileNav = () => {
         document.body.style.overflowY = "auto";
       }
     });
-  } else {
+  } else if (!document.body.classList.contains("menu") && !document.body.classList.contains("sign-in")){
     const headerBars = document.querySelector(".header__bars");
     const headerOpenBtn = document.querySelector(".header__bars-open");
     const headerCloseBtn = document.querySelector(".header__bars-close");
