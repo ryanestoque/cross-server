@@ -115,7 +115,6 @@ form button {
   color: var(--clr-light);
   font-weight: 500;
   text-decoration: underline;
-  padding-bottom: 5rem;
 }
 
 .back-button {
