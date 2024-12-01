@@ -126,12 +126,16 @@
     font-size: var(--size-5xl);
     color: var(--clr-blue700);
   }
-
 }
 
 /* 2xl-screens */
 @media (min-width: 1536px) {
+  .stalls__title {
+    font-size: var(--size-6xl);
+    color: var(--clr-blue700);
+  }
+
   .stalls__grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
