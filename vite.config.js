@@ -18,6 +18,7 @@ export default defineConfig({
         topSpatula: './src/pages/menu/top-spatula/top-spatula.html',
         waffleTime: './src/pages/menu/waffle-time/waffle-time.html',
         zekiah: './src/pages/menu/zekiah/zekiah.html',
+        sisigWithRice: '././src/pages/menu/zekiah/sisig-with-rice.html'
       },
     },
   },
