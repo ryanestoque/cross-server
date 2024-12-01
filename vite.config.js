@@ -14,7 +14,7 @@ export default defineConfig({
         colil: './src/pages/menu/colil/colil.html',
         kuyaJong: './src/pages/menu/kuya-jong/kuya-jong.html',
         santinos: './src/pages/menu/santinos/santinos.html',
-        titasCatering: './src/menu/pages/titas-catering/titas-catering.html',
+        titasCatering: './src/pages/menu/titas-catering/titas-catering.html',
         topSpatula: './src/pages/menu/top-spatula/top-spatula.html',
         waffleTime: './src/pages/menu/waffle-time/waffle-time.html',
         zekiah: './src/pages/menu/zekiah/zekiah.html',
