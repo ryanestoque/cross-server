@@ -1,8 +1,8 @@
 .menu {
   background-position: -2px -5px;
   background-image: 
-    linear-gradient(to right, rgba(29, 78, 216, 0.35) 2px, transparent 2px),
-    linear-gradient(to bottom, rgba(29, 78, 216, 0.35) 2px, transparent 2px);
+    linear-gradient(to right, rgba(29, 78, 216, 0.25) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(29, 78, 216, 0.25) 2px, transparent 2px);
   background-size: 75px 75px;
   background-color: var(--clr-light);
 }
