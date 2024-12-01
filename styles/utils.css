@@ -92,6 +92,41 @@
   border: solid 2px var(--clr-light);
 } */
 
+/* .select {
+  border: solid 1px var(--clr-blue700);
+  background-color: transparent;
+  padding: 0.5em 1em;
+  color: var(--clr-blue700);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+} */
+
+.select {
+  border: 0px;
+  background: transparent;
+  color: var(--clr-blue700);
+  font-weight: 600;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select-wrap {
+  border: solid 1px var(--clr-blue700);
+  background-color: var(--clr-light);
+  padding: 0.5em 1em;
+  color: var(--clr-blue700);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;;
+}
+
+.select:focus {
+  outline-color: var(--clr-blue700);;
+}
+
 .container {
   width: 100%;
   margin-left: auto;

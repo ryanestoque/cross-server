@@ -39,7 +39,7 @@
 
 .welcome-back h1 {
   font-size: var(--size-4xl);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .welcome-back p {

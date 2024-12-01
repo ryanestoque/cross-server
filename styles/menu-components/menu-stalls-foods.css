@@ -90,8 +90,12 @@
   margin-top: 1rem;
 }
 
+.stalls-go-back-six, .stalls-go-back-three {
+  text-decoration: none;
+}
+
 .stalls-go-back-left-arrow {
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
   width: var(--size-lg);
   stroke-width: 3px;
 }

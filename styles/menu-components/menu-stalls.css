@@ -22,6 +22,10 @@
   gap: 1rem;
 }
 
+.stalls__grid a {
+  text-decoration: none;
+}
+
 .stalls__stall {
   width: 100%;
   border: solid 2px var(--clr-blue700);
