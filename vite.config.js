@@ -29,6 +29,9 @@ export default defineConfig({
         coffito: './src/pages/menu/coffito/coffito.html',
 
         colil: './src/pages/menu/colil/colil.html',
+        siomai3pcs: './src/pages/menu/colil/siomai-3pcs.html',
+        siomai5pcs: './src/pages/menu/colil/siomai-5pcs.html',
+        siomaiRice: './src/pages/menu/colil/siomai-rice.html',
 
         kuyaJong: './src/pages/menu/kuya-jong/kuya-jong.html',
         friedChicken: './src/pages/menu/kuya-jong/fried-chicken.html',
