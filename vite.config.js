@@ -41,6 +41,12 @@ export default defineConfig({
         santinos: './src/pages/menu/santinos/santinos.html',
 
         titasCatering: './src/pages/menu/titas-catering/titas-catering.html',
+        hotsilog: './src/pages/menu/titas-catering/hotsilog.html',
+        sinuglaw: './src/pages/menu/titas-catering/sinuglaw.html',
+        mamon: './src/pages/menu/titas-catering/mamon.html',
+        donut: './src/pages/menu/titas-catering/donut.html',
+        crinkles: './src/pages/menu/titas-catering/crinkles.html',
+        ensaymada: './src/pages/menu/titas-catering/ensaymada.html',
 
         topSpatula: './src/pages/menu/top-spatula/top-spatula.html',
         dewberry: './src/pages/menu/top-spatula/dewberry.html',
