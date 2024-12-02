@@ -44,7 +44,7 @@
 .order-page__right {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .order-page__content {
@@ -123,10 +123,6 @@
 
   .order-page__btns {
     font-size: var(--size-base);
-  }
-
-  .order-page__right {
-    gap: 1.5rem;
   }
 }
 
