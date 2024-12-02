@@ -11,6 +11,12 @@ export default defineConfig({
         amarah: './src/pages/menu/amarah/amarah.html',
 
         cafeFerrer: './src/pages/menu/cafe-ferrer/cafe-ferrer.html',
+        teriyaki: './src/pages/menu/cafe-ferrer/teriyaki.html',
+        yangnyeom: './src/pages/menu/cafe-ferrer/yangnyeom.html',
+        honey: './src/pages/menu/cafe-ferrer/honey-sriracha.html',
+        saltedEgg: './src/pages/menu/cafe-ferrer/salted-egg.html',
+        garlicParmesan: './src/pages/menu/cafe-ferrer/garlic-parmesan.html',
+        spicyBuffalo: './src/pages/menu/cafe-ferrer/spicy-buffalo.html',
 
         chicksAhoy: './src/pages/menu/chicks-ahoy/chicks-ahoy.html',  
         dynamite: './src/pages/menu/chicks-ahoy/dynamite.html',  
