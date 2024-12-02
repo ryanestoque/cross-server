@@ -25,12 +25,24 @@ export default defineConfig({
         colil: './src/pages/menu/colil/colil.html',
 
         kuyaJong: './src/pages/menu/kuya-jong/kuya-jong.html',
+        friedChicken: './src/pages/menu/kuya-jong/fried-chicken.html',
+        beefSteak: './src/pages/menu/kuya-jong/beef-steak.html',
+        porkMenudo: './src/pages/menu/kuya-jong/pork-menudo.html',
+        porkChop: './src/pages/menu/kuya-jong/pork-chop.html',
+        chickenAdobo: './src/pages/menu/kuya-jong/chicken-adobo.html',
+        friedBangus: './src/pages/menu/kuya-jong/fried-bangus.html',
 
         santinos: './src/pages/menu/santinos/santinos.html',
 
         titasCatering: './src/pages/menu/titas-catering/titas-catering.html',
 
         topSpatula: './src/pages/menu/top-spatula/top-spatula.html',
+        dewberry: './src/pages/menu/top-spatula/dewberry.html',
+        skyflakes: './src/pages/menu/top-spatula/skyflakes.html',
+        rebisco: './src/pages/menu/top-spatula/rebisco.html',
+        gummyWorms: './src/pages/menu/top-spatula/gummy-worms.html',
+        nagaraya: './src/pages/menu/top-spatula/nagaraya.html',
+        chichacorn: './src/pages/menu/top-spatula/chichacorn.html',
 
         waffleTime: './src/pages/menu/waffle-time/waffle-time.html',
         americanHotdog: './src/pages/menu/waffle-time/american-hotdog.html',
