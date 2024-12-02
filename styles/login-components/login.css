@@ -1,3 +1,22 @@
+.login__back {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  color: var(--clr-blue700-light);
+  font-weight: 600;
+  font-size: var(--size-sm);
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.login__arrow {
+  margin-right: 0.25rem;
+  width: var(--size-sm);
+  stroke-width: 3px;
+}
+
 .sign-in  {
   display: flex;
   justify-content: center;
@@ -23,7 +42,7 @@
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  margin-top: 12rem;
+  margin-top: 20rem;
 }
 
 .welcome-back-md {
@@ -154,11 +173,25 @@ form button {
 
 /* sm-screens */
 @media (min-width: 640px) {
-
+  .login__back {
+    font-size: var(--size-base);
+  }
+  
+  .login__arrow {
+    width: var(--size-base);
+  }
 }
 
 /* md-screens */
 @media (min-width: 768px) {
+  .login__back {
+    display: none;
+  }
+  
+  .login__arrow {
+    display: none;
+  }
+
   .sign-in__container {
     flex-direction: row;
   }

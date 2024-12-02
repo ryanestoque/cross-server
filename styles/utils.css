@@ -43,6 +43,7 @@
   font-weight: 600;
   transition: border 0.3s, background-color 0.3s, color 0.3s;
   box-shadow: 0 10px 20px rgba(220, 38, 38, 0.5), 0 6px 6px rgba(220, 38, 38, 0.5), 0 0 50px -10px var(--clr-rose600);
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -64,6 +65,7 @@
   border-radius: 8px;
   font-weight: 600;
   transition: border 0.3s, background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .btn-2:hover {
@@ -80,6 +82,7 @@
   border-radius: 8px;
   font-weight: 600;
   transition: border 0.3s, background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .btn-3:hover {

@@ -8,6 +8,19 @@
 </head>
 <body class="sign-in">
   <main>
+    <a onclick="window.history.back()" class="login__back">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" viewBox="0 0 24 24" 
+        stroke-width="1.5" stroke="currentColor" 
+        class="login__arrow">
+        <path 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+      Back to Menu
+    </a>
     <div class="welcome-back lazy loading">
       <div class="welcome-back__content">
         <h1>Welcome!</h1>
@@ -60,9 +73,6 @@
         </form>
       </div>
     </section>
-    <p class="sign-in__return" onclick="window.history.back()">
-      Return
-    </p>
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>

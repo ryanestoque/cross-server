@@ -1,3 +1,20 @@
+.stalls__back {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  color: var(--clr-blue700-light);
+  font-weight: 600;
+  font-size: var(--size-sm);
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.stalls__arrow {
+  margin-right: 0.25rem;
+  width: var(--size-sm);
+  stroke-width: 3px;
+}
+
 .stalls-food__grid {
   width: 100%;
   height: 100%;
@@ -125,6 +142,14 @@
 
 /* sm-screens */
 @media (min-width: 640px) {
+  .stalls__back {
+    font-size: var(--size-base);
+  }
+
+  .stalls__arrow {
+    width: var(--size-base);
+  }
+
   .stalls__logo {
     width: var(--size-3xl);
   }
@@ -207,6 +232,14 @@
 
 /* 2xl-screens */
 @media (min-width: 1536px) {
+  .stalls__back {
+    font-size: var(--size-lg);
+  }
+
+  .stalls__arrow {
+    width: var(--size-lg);
+  }
+
   .stalls-food__title {
     font-size: var(--size-3xl);
   }
