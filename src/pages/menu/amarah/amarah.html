@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://api.fontshare.com/v2/css?f[]=montserrat@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap" rel="stylesheet">
   <title>Amarah's Snack Bar</title>
 </head>
 <body class="menu">
   <header class="menu-header">
       <nav class="menu-header__nav">
-        <a href="../../../../index.html#home" class="menu-header__title">
+        <a href="../../index.html#home" class="menu-header__title">
           CROSS-SERVER
         </a>
         <ul class="menu-header__buttons">
           <li>
-            <a class="menu-header__link" href="../../../../index.html#home">
+            <a class="menu-header__link" href="../../index.html">
               Home
             </a>
           </li>
           <li>
-            <a class="menu-header__link" href="../../../../index.html#about">
+            <a class="menu-header__link" href="../../index.html#about">
               About
             </a>
           </li>
@@ -29,7 +28,7 @@
             </a>
           </li>
           <li>
-            <a class="menu-header__link" href="../../../../index.html#team">
+            <a class="menu-header__link" href="../../index.html#team">
               Team
             </a>
           </li>
@@ -47,7 +46,7 @@
             </button>
           </li>
           <li>
-            <a href="../../login/login.html" class="menu-header__signin btn-3">
+            <a href="sign-in.html" class="menu-header__signin btn-3">
               Guest Login
             </a>
           </li>
@@ -98,16 +97,16 @@
     <nav>
       <ul class="menu-mobile-nav__menu">
         <li>
-          <a href="../../../../index.html#home" class="menu-mobile-nav__link">Home</a>
+          <a href="../../index.html" class="menu-mobile-nav__link">Home</a>
         </li>
         <li>
-          <a href="../../../../index.html#about" class="menu-mobile-nav__link">About</a>
+          <a href="../../index.html#about" class="menu-mobile-nav__link">About</a>
         </li>
         <li>
           <a href="#" class="menu-mobile-nav__link menu-mobile-nav-active">Menus</a>
         </li>
         <li>
-          <a href="../../../../index.html#team" class="menu-mobile-nav__link">Team</a>
+          <a href="../../index.html#team" class="menu-mobile-nav__link">Team</a>
         </li>
         <li class="menu-mobile-nav__link-line"></li>
         <li>
@@ -123,7 +122,7 @@
           </button>
         </li>
         <li>
-          <a href="../../login/login.html" class="menu-mobile-nav__signin btn-3">
+          <a href="src/pages/sign-in.html" class="menu-mobile-nav__signin btn-3">
             Guest Login
           </a>
         </li>
@@ -139,7 +138,6 @@
 
   <main>
     <section class="stalls container lazy loading">
-      <h1 class="stalls__title">Amarah's Snack Bar</h1>
       <a href="../menu.html" class="stalls__back">
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
@@ -153,111 +151,124 @@
         </svg>
         Back to Stalls
       </a>
+      <h1 class="stalls__title">Amarah's Snack Bar</h1>
       <div class="stalls-food__grid">
 
-        <div class="stalls-food">
-          <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
-          <div class="stalls-food__img-container">
-            <img 
-              class="stalls-food__img lazy__img" 
-              data-src="/zekiah-sisig-foods/sisig.webp">
+        <a href="pastil.html">
+          <div class="stalls-food">
+            <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
+            <div class="stalls-food__img-container">
+              <img 
+                class="stalls-food__img lazy__img" 
+                data-src="/amarah-foods/pastil.webp">
+            </div>
+            <div class="stalls-food__content">
+              <h2 class="stalls-food__title">
+                Pastil
+              </h2>
+              <p class="stalls-food__price">
+                ₱15.00
+              </p>
+            </div>
           </div>
-          <div class="stalls-food__content">
-            <h2 class="stalls-food__title">
-              Sisig with Rice
-            </h2>
-            <p class="stalls-food__price">
-              ₱65.00
-            </p>
-          </div>
-        </div>
+        </a>
 
-        <div class="stalls-food">
-          <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
-          <div class="stalls-food__img-container">
-            <img 
-              class="stalls-food__img lazy__img" 
-              data-src="/zekiah-sisig-foods/shrimp.webp">
+        <a href="hotdog-buns.html">
+          <div class="stalls-food">
+            <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
+            <div class="stalls-food__img-container">
+              <img 
+                class="stalls-food__img lazy__img" 
+                data-src="/amarah-foods/hotdogbuns.webp">
+            </div>
+            <div class="stalls-food__content">
+              <h2 class="stalls-food__title">
+                Hotdog Buns 
+              </h2>
+              <p class="stalls-food__price">
+                ₱45.00
+              </p>
+            </div>
           </div>
-          <div class="stalls-food__content">
-            <h2 class="stalls-food__title">
-              Shrimps
-            </h2>
-            <p class="stalls-food__price">
-              ₱50.00
-            </p>
-          </div>
-        </div>
+        </a>
 
-        <div class="stalls-food">
-          <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
-          <div class="stalls-food__img-container">
-            <img 
-              class="stalls-food__img lazy__img" 
-              data-src="/zekiah-sisig-foods/kwek.webp">
+        <a href="hotdog-stick.html">
+          <div class="stalls-food">
+            <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
+            <div class="stalls-food__img-container">
+              <img 
+                class="stalls-food__img lazy__img" 
+                data-src="/amarah-foods/hotdogstick.webp">
+            </div>
+            <div class="stalls-food__content">
+              <h2 class="stalls-food__title">
+                Hotdog Stick
+              </h2>
+              <p class="stalls-food__price">
+                ₱20.00
+              </p>
+            </div>
           </div>
-          <div class="stalls-food__content">
-            <h2 class="stalls-food__title">
-              Kwek-Kwek
-            </h2>
-            <p class="stalls-food__price">
-              ₱25.00
-            </p>
-          </div>
-        </div>
+      </a>
 
+      <a href="mineral-water.html">
         <div class="stalls-food">
           <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
           <div class="stalls-food__img-container">
             <img 
               class="stalls-food__img lazy__img" 
-              data-src="/zekiah-sisig-foods/banana-cake.webp">
+              data-src="/amarah-foods/mineralwater.webp">
           </div>
           <div class="stalls-food__content">
             <h2 class="stalls-food__title">
-              Banana Cake
+              Mineral Water
             </h2>
             <p class="stalls-food__price">
               ₱20.00
             </p>
           </div>
         </div>
+      </a>
 
+      <a href="coke.html">
         <div class="stalls-food">
           <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
           <div class="stalls-food__img-container">
             <img 
               class="stalls-food__img lazy__img" 
-              data-src="/zekiah-sisig-foods/hotcake.webp">
+              data-src="/amarah-foods/coke.webp">
           </div>
           <div class="stalls-food__content">
             <h2 class="stalls-food__title">
-              Hotcake
+              Coke Can
             </h2>
             <p class="stalls-food__price">
-              ₱10.00
+              ₱50.00
             </p>
           </div>
         </div>
+      </a>
 
+      <a href="minute-maid.html">
         <div class="stalls-food">
           <img class="stalls__logo lazy__img" data-src="/marquee/amara-snack-bar-logo.webp">
           <div class="stalls-food__img-container">
             <img 
               class="stalls-food__img lazy__img" 
-              data-src="/zekiah-sisig-foods/cinnamon.webp">
+              data-src="/amarah-foods/minutemaid.webp">
           </div>
           <div class="stalls-food__content">
             <h2 class="stalls-food__title">
-              Cinnamon Roll
+              Minute Maid
             </h2>
             <p class="stalls-food__price">
               ₱15.00
             </p>
           </div>
         </div>
-        
-        <!-- <a href="../menu.html" class="stalls-go-back-six">
+      </a>
+
+        <a href="menu.html" class="stalls-go-back-six">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" viewBox="0 0 24 24" 
@@ -269,7 +280,7 @@
               d="M15.75 19.5 8.25 12l7.5-7.5" />
           </svg>
           Back to Stalls
-        </a> -->
+        </a>
       </div>
     </section>
   </main>

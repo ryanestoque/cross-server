@@ -9,6 +9,20 @@ export default defineConfig({
         menu: './src/pages/menu/menu.html',
         
         amarah: './src/pages/menu/amarah/amarah.html',
+        pastil: './src/pages/menu/amarah/pastil.html',
+        hotdogBuns: './src/pages/menu/amarah/hotdog-buns.html',
+        hotdogStick: './src/pages/menu/amarah/hotdog-stick.html',
+        mineralWater: './src/pages/menu/amarah/mineral-water.html',
+        coke: './src/pages/menu/amarah/coke.html',
+        minuteMaid: './src/pages/menu/amarah/minute-maid.html',
+
+        anneSarap: './src/pages/menu/anne-sarap/anne-sarap.html',
+        blueLemonade: './src/pages/menu/anne-sarap/blue-lemonade.html',
+        icedRedTea: './src/pages/menu/anne-sarap/iced-red-tea.html',
+        pineappleJuice: './src/pages/menu/anne-sarap/pineapple-juice.html',
+        grapeJuice: './src/pages/menu/anne-sarap/grape-juice.html',
+        mangoJuice: './src/pages/menu/anne-sarap/mango-juice.html',
+        icedTea: './src/pages/menu/anne-sarap/iced-tea.html',
 
         cafeFerrer: './src/pages/menu/cafe-ferrer/cafe-ferrer.html',
         teriyaki: './src/pages/menu/cafe-ferrer/teriyaki.html',
@@ -27,6 +41,12 @@ export default defineConfig({
         konnichiwa: './src/pages/menu/chicks-ahoy/konnichiwa.html',
 
         coffito: './src/pages/menu/coffito/coffito.html',
+        ubeLatte: './src/pages/menu/coffito/ube-latte.html',
+        strawberryLatte: './src/pages/menu/coffito/strawberry-latte.html',
+        matchaLatte: './src/pages/menu/coffito/matcha-latte.html',
+        chocoLatte: './src/pages/menu/coffito/choco-latte.html',
+        spanishLatte: './src/pages/menu/coffito/spanish-latte.html',
+        caramelCoffee: './src/pages/menu/coffito/caramel-coffee.html',
 
         colil: './src/pages/menu/colil/colil.html',
         siomai3pcs: './src/pages/menu/colil/siomai-3pcs.html',
@@ -42,6 +62,12 @@ export default defineConfig({
         friedBangus: './src/pages/menu/kuya-jong/fried-bangus.html',
 
         santinos: './src/pages/menu/santinos/santinos.html',
+        hawaiianMadness: './src/pages/menu/santinos/hawaiian-madness.html',
+        pepperoniSorpresa: './src/pages/menu/santinos/pepperoni-sorpresa.html',
+        spicyTuna: './src/pages/menu/santinos/spicy-tuna.html',
+        baconBonanza: './src/pages/menu/santinos/bacon-bonanza.html',
+        chickenHawaiian: './src/pages/menu/santinos/chicken-hawaiian.html',
+        barbecueBeef: './src/pages/menu/santinos/barbecue-beef.html',
 
         titasCatering: './src/pages/menu/titas-catering/titas-catering.html',
         hotsilog: './src/pages/menu/titas-catering/hotsilog.html',

@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://api.fontshare.com/v2/css?f[]=montserrat@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap" rel="stylesheet">
-  <title>Colil Food Corner</title>
+  <title>Blue Lemonade | Anne Sarap</title>
 </head>
-<body class="menu">
+<body class="menu order">
   <header class="menu-header">
     <nav class="menu-header__nav">
       <a href="../../../../index.html#home" class="menu-header__title">
@@ -138,96 +138,59 @@
   <!-- End of Mobile Navigation -->
 
   <main>
-    <section class="stalls container lazy loading">
-      <a href="../menu.html" class="stalls__back">
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          fill="none" viewBox="0 0 24 24" 
-          stroke-width="1.5" stroke="currentColor" 
-          class="stalls__arrow">
-          <path 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            d="M15.75 19.5 8.25 12l7.5-7.5" />
-        </svg>
-        Back to Stalls
-      </a>
-      <h1 class="stalls__title">Colil Food Corner</h1>
-      
-      <div class="stalls-food__grid">
-        
-        <a href="siomai-3pcs.html">
-          <div class="stalls-food">
-            <img class="stalls__logo lazy__img" data-src="/marquee/colil-logo.webp">
-            <div class="stalls-food__img-container">
-              <img 
-                class="stalls-food__img lazy__img" 
-                data-src="/colil-foods/3pcs.webp">
-            </div>
-            <div class="stalls-food__content">
-              <h2 class="stalls-food__title">
-                Beef Siomai (3 pcs)
-              </h2>
-              <p class="stalls-food__price">
-                ₱20.00
-              </p>
-            </div>
+    <form class="order-page container lazy loading">
+      <div class="order-page__container">
+        <div class="order-page__left">
+          <img
+            class="lazy__img"
+            data-src="/anne-sarap-foods/blue-lemonade.webp"
+          >
+        </div>
+        <div class="order-page__right">
+          <div class="order-page__content">
+            <h6 class="order-page__stall">Anne Sarap</h6>
+            <h1 class="order-page__food">
+              Blue Lemonade
+            </h1>
+            <p class="order-page__price">
+              ₱15.00
+            </p>
           </div>
-        </a>
-
-        <a href="siomai-5pcs.html">
-          <div class="stalls-food">
-            <img class="stalls__logo lazy__img" data-src="/marquee/colil-logo.webp">
-            <div class="stalls-food__img-container">
-              <img 
-                class="stalls-food__img lazy__img" 
-                data-src="/colil-foods/5pcs.webp">
+          <div class="order-page__btns">
+            <div class="order-page__select select-wrap">
+              <label for="qty">Qty:&nbsp;</label>
+              <select class="select" name="qty" id="qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
             </div>
-            <div class="stalls-food__content">
-              <h2 class="stalls-food__title">
-                Beef Siomai (5 pcs)
-              </h2>
-              <p class="stalls-food__price">
-                ₱30.00
-              </p>
-            </div>
+            <input type="submit" value="ADD TO CART" class="order-page__add btn">
           </div>
-        </a>
-
-        <a href="siomai-rice.html">
-          <div class="stalls-food">
-            <img class="stalls__logo lazy__img" data-src="/marquee/colil-logo.webp">
-            <div class="stalls-food__img-container">
-              <img 
-                class="stalls-food__img lazy__img" 
-                data-src="/colil-foods/siomai-rice.webp">
-            </div>
-            <div class="stalls-food__content">
-              <h2 class="stalls-food__title">
-                Siomai Rice (5pcs)
-              </h2>
-              <p class="stalls-food__price">
-                ₱45.00
-              </p>
-            </div>
-          </div>
-        </a>
-        
-        <!-- <a href="../menu.html" class="stalls-go-back-three">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" viewBox="0 0 24 24" 
-            stroke-width="1.5" stroke="currentColor" 
-            class="stalls-go-back-left-arrow">
-            <path 
-              stroke-linecap="round" 
-              stroke-linejoin="round" 
-              d="M15.75 19.5 8.25 12l7.5-7.5" />
-          </svg>
-          Back to Stalls
-        </a> -->
-      </div>
-    </section>
+          <a href="anne-sarap.html" class="order-page__back">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor" 
+              class="order-page__arrow"
+              >
+              <path 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+            Back to Menu
+          </a>
+        </div>
+    </div>
+    </form>
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>
