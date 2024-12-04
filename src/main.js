@@ -24,7 +24,6 @@ import mobileNav from './utils/mobile-nav';
 import menuMobileNav from './utils/menu-mobile-nav';
 import lazyLoading from './utils/lazy-loading';
 import scrollspy from './utils/scrollspy';
-import loadMore from './utils/load-more';
 
 // JAVASCRIPT FUNCTION CALLS
 mobileNav();
@@ -32,4 +31,3 @@ menuMobileNav();
 lazyLoading();
 header();
 scrollspy();
-loadMore();
