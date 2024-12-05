@@ -1,31 +1,13 @@
-.login__back {
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  color: var(--clr-blue700-light);
-  font-weight: 600;
-  font-size: var(--size-sm);
-  text-decoration: none;
-  margin-top: 2rem;
-}
-
-.login__arrow {
-  margin-right: 0.25rem;
-  width: var(--size-sm);
-  stroke-width: 3px;
-}
-
 .sign-in  {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 2rem;
 }
 
 .sign-in__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--clr-light);
@@ -36,17 +18,16 @@
 }
 
 .welcome-back {
-  flex: 1;
-  color: var(--clr-light);
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-}
-
-.welcome-back-md {
-  display: none;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  background: var(--clr-blue700);
+  color: var(--clr-light);
+  padding: 2rem;
+  padding-top: 4rem;
 }
 
 .welcome-back__content {
@@ -126,17 +107,11 @@ form button {
   margin-top: 1rem;
 }
 
-.sign-in__return {
-  display: block;
-  margin-top: 1.5rem;
-  text-align: center;
-  font-size: var(--size-base);
-  color: var(--clr-light);
-  font-weight: 500;
-  text-decoration: underline;
-}
-
 .back-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,13 +121,12 @@ form button {
   text-decoration: none;
   font-size: var(--size-3xl);
   font-weight: 500;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   transition: all 0.3s;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  margin-top: 2rem;
 }
 
 .back-button:hover {
@@ -184,12 +158,23 @@ form button {
 
 /* md-screens */
 @media (min-width: 768px) {
-  .login__back {
-    display: none;
-  }
-  
-  .login__arrow {
-    display: none;
+  .back-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid var(--clr-blue700);
+    color: var(--clr-blue700);
+    text-decoration: none;
+    font-size: var(--size-3xl);
+    font-weight: 500;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
 
   .sign-in__container {
@@ -197,22 +182,10 @@ form button {
   }
 
   .welcome-back {
-    display: none;
+    padding-top: 2rem;
   }
 
-  .welcome-back-md {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    flex: 1;
-    background: var(--clr-blue700);
-    color: var(--clr-light);
-    padding: 2rem;
-  }
-
-  .welcome-back-md h1 {
+  .welcome-back h1 {
     font-size: var(--size-4xl);
     margin-bottom: 1rem;
   }
@@ -226,7 +199,7 @@ form button {
   }
 
   .sign-in__return {
-    display: none;
+    display: flex;
   }
 }
 

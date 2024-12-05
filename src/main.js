@@ -14,6 +14,7 @@ import '../styles/menu-components/menu-mobile-nav.css';
 import '../styles/menu-components/menu-stalls.css';
 import '../styles/menu-components/menu-stalls-foods.css';
 import '../styles/menu-components/menu-order-page.css';
+import '../styles/cart-components/cart.css';
 
 // CSS UTILS
 import '../styles/utils.css';
@@ -24,6 +25,7 @@ import mobileNav from './utils/mobile-nav';
 import menuMobileNav from './utils/menu-mobile-nav';
 import lazyLoading from './utils/lazy-loading';
 import scrollspy from './utils/scrollspy';
+import guestLogin from './utils/guest-login';
 
 // JAVASCRIPT FUNCTION CALLS
 mobileNav();
@@ -31,3 +33,4 @@ menuMobileNav();
 lazyLoading();
 header();
 scrollspy();
+guestLogin();

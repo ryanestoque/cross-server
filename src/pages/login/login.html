@@ -8,33 +8,8 @@
 </head>
 <body class="sign-in">
   <main>
-    <a onclick="window.history.back()" class="login__back">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        fill="none" viewBox="0 0 24 24" 
-        stroke-width="1.5" stroke="currentColor" 
-        class="login__arrow">
-        <path 
-          stroke-linecap="round" 
-          stroke-linejoin="round" 
-          d="M15.75 19.5 8.25 12l7.5-7.5" />
-      </svg>
-      Back to Menu
-    </a>
-    <div class="welcome-back lazy loading">
-      <div class="welcome-back__content">
-        <h1>Welcome!</h1>
-        <p>
-          To keep connected with us, please sign in with your personal info.
-        </p>
-      </div>
-      <!-- <a onclick="window.history.back()" class="back-button">
-        <span class="arrow">←</span>
-      </a> -->
-    </div>
-
-    <section class="container sign-in__container lazy loading">
-      <div class="welcome-back-md">
+    <section class=" sign-in__container lazy loading">
+      <div class="welcome-back">
         <div class="welcome-back__content">
           <h1>Welcome!</h1>
           <p>
@@ -46,27 +21,49 @@
         </a>
       </div>
   
-      <div class="form-section">
+      <div class="form-section container">
         <h2>Login as Guest</h2>
-        <form>
+        <form id="guestForm" autocomplete="off">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="John Doe">
+            <input 
+              type="text" 
+              id="guestName" 
+              placeholder="John Doe"
+              maxlength="50"
+              required
+              >
           </div>
   
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="firstname.lastname@hcdc.edu.ph">
+            <input 
+              type="email" 
+              id="guestEmail" 
+              placeholder="firstname.lastname@hcdc.edu.ph"
+              required
+              >
           </div>
   
           <div class="form-group">
             <label for="address" class="form-label">Address / Location</label>
-            <input type="text" class="form-control" id="address" placeholder="Milan, Brgy. Buhangin, Davao City">
+            <input 
+              type="text" 
+              class="form-control" 
+              id="guestAddress" 
+              placeholder="Milan, Brgy. Buhangin, Davao City"
+              required
+              >
         </div>
   
           <div class="form-group">
             <label for="contact">Contact Number</label>
-            <input type="text" id="contact" placeholder="09XX-XXX-XXX">
+            <input 
+              type="text" 
+              id="guestContact" 
+              placeholder="09XX-XXX-XXX"
+              required
+              >
           </div>
   
           <button class="btn" type="submit">SIGN IN</button>

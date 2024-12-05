@@ -7,6 +7,7 @@ export default defineConfig({
         main: './index.html',
         login: './src/pages/login/login.html',
         menu: './src/pages/menu/menu.html',
+        cart: './src/pages/cart/cart.html',
         
         amarah: './src/pages/menu/amarah/amarah.html',
         pastil: './src/pages/menu/amarah/pastil.html',

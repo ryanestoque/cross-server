@@ -101,7 +101,7 @@
   }
   
   .menu-header__line {
-    border: solid 1px var(--clr-blue700);
+    border: solid 1px var(--clr-blue700-light);
     padding-top: 1.5em;
     margin-left: 1.5em;
     margin-right: 1.5em;
@@ -109,10 +109,10 @@
   
   .menu-header__cart {
     display: none;
-    color: var(--clr-light);
+    color: var(--clr-blue700-light);
     width: var(--size-2xl);
     height: var(--size-2xl);
-    margin-right: 1.5em;
+    margin-left: -0.25rem;
     transition: color 0.3s;
   }
 
