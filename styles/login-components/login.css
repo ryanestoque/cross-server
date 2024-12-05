@@ -111,13 +111,12 @@ form button {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: transparent;
   border: 2px solid var(--clr-blue700);
-  color: var(--clr-blue700);
+  color: var(--clr-light);
   text-decoration: none;
   font-size: var(--size-3xl);
   font-weight: 500;
@@ -127,12 +126,6 @@ form button {
   transition: all 0.3s;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-}
-
-.back-button:hover {
-  background-color: var(--clr-blue700);
-  color: var(--clr-light);
-  border: 2px solid white;
 }
 
 /* xxs-screens */
@@ -175,6 +168,12 @@ form button {
     transition: all 0.3s;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+  }
+
+  .back-button:hover {
+    background-color: var(--clr-blue700);
+    color: var(--clr-light);
+    border: 2px solid white;
   }
 
   .sign-in__container {
