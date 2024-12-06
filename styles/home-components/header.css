@@ -103,8 +103,8 @@
   .header__line {
     border: solid 1px var(--clr-blue700-light);
     padding-top: 1.5em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   
   .header__cart {
@@ -162,7 +162,6 @@
   .header__cart {
     width: var(--size-3xl);
     height: var(--size-3xl);
-    margin-right: 1.5em;
   }
 }
 

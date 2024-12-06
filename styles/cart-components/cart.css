@@ -1,3 +1,161 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  flex-direction: column-reverse;
+}
+
+.cart__left {
+  flex: 2;
+}
+
+.cart__right {
+  width: 100%;
+  padding: 2rem;
+  color: var(--clr-blue700);
+  background-color: var(--clr-light);
+  /* box-shadow: 0 10px 20px rgba(29, 78, 216, 0.5), 0 6px 6px rgba(29, 78, 216, 0.5), 0 0 50px -10px var(--clr-blue700); */
+  border: solid 2px var(--clr-blue700);
+  border-radius: 16px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  word-break: normal;
+  overflow: hidden;
+}
+
+.cart__profile-pic {
+  width: 8rem;
+}
+
+.cart__greeting {
+  margin-top: 1rem;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  font-size: var(--size-xl);
+  max-width: 13ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart__right-user-info {
+  align-self: center;
+  text-align: start;
+  margin-top: 1rem;
+  margin-left: -2.5rem;
+  list-style: none;
+}
+
+.cart__info {
+  display: flex;
+  align-items: center;
+  font-size: var(--size-sm);
+  gap: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+}
+
+.cart__email {
+  word-break: break-all;
+}
+  
+.cart__info-icons {
+  width: var(--size-base);
+  flex-shrink: 0;
+}
+
 .cart__cart {
   color: var(--clr-blue700);
 }
+
+
+/* xxs-screens */
+@media (min-width: 320px) {    
+  .cart__greeting {
+    font-size: var(--size-2xl);
+    
+  }
+
+  .cart__info {
+    font-size: var(--size-base);
+  }
+  
+  .cart__info-icons {
+    width: var(--size-lg);
+  }
+}
+
+/* xs-screens */
+@media (min-width: 475px) {
+
+}
+
+/* sm-screens */
+@media (min-width: 640px) {
+  .cart__greeting {
+    font-size: var(--size-3xl);
+  }
+
+  .cart__info {
+    font-size: var(--size-large);
+  }
+  
+  .cart__info-icons {
+    width: var(--size-xl);
+  }
+}
+
+/* md-screens */
+@media (min-width: 768px) {
+  .cart__greeting {
+    font-size: var(--size-2xl);
+  }
+
+  .cart__info {
+    font-size: var(--size-sm);
+  }
+  
+  .cart__info-icons {
+    width: var(--size-base);
+  }
+
+  .cart {
+    flex-direction: row;
+  }
+}
+
+/* lg-screens */
+@media (min-width: 1024px) {
+  .cart__left {
+    flex: 3;
+  }
+
+  .cart__greeting {
+    font-size: var(--size-3xl);
+  }
+
+  .cart__info {
+    font-size: var(--size-large);
+  }
+  
+  .cart__info-icons {
+    width: var(--size-xl);
+  }
+}
+
+/* xl-screens */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* 2xl-screens */
+/* @media (min-width: 1536px) {
+
+} */

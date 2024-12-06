@@ -43,7 +43,13 @@ const guestLogin = () => {
     const menuHeaderCart = document.querySelector(".menu-header__cart");
     const mobileMenuLogin = document.querySelector(".menu-mobile-nav__signin");
     const mobileMenuCart = document.querySelector(".menu-mobile-nav__cart");
+
+    const cartName = document.getElementById("cartName");
+    const cartEmail = document.getElementById("cartEmail");
+    const cartAddress = document.getElementById("cartAddress");
+    const cartContact = document.getElementById("cartContact");
     
+    const guestUser = JSON.parse(localStorage.getItem("guestUser"));
     const loggedIn = localStorage.getItem("loggedIn");
 
     if(loggedIn === "true") {
@@ -77,6 +83,22 @@ const guestLogin = () => {
 
       if(mobileMenuCart) {
         mobileMenuCart.style.display = "flex";
+      }
+
+      if(cartName) {
+        cartName.textContent = guestUser.name;
+      }
+      
+      if(cartEmail) {
+        cartEmail.textContent = guestUser.email;
+      }
+      
+      if(cartAddress) {
+        cartAddress.textContent = guestUser.address;
+      }
+      
+      if(cartContact) {
+        cartContact.textContent = guestUser.contact;
       }
     }
   });
