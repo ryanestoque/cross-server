@@ -142,8 +142,16 @@
   <!-- End of Mobile Navigation -->
 
   <main>
-    <form class="order-page container lazy loading">
-      <div class="order-page__container">
+    <div class="order-page container lazy loading">
+      <div 
+        class="order-page__container" 
+        data-id="9"
+        data-name="Iced Red Tea"
+        data-price="15.00"
+        data-stall="Anne Sarap"
+        data-fldr="anne-sarap-foods"
+        data-img="iced-red-tea.webp"
+        data-href="/src/pages/menu/anne-sarap/iced-red-tea.html">
         <div class="order-page__left">
           <img
             class="lazy__img"
@@ -163,7 +171,7 @@
           <div class="order-page__btns">
             <div class="order-page__select select-wrap">
               <label for="qty">Qty:&nbsp;</label>
-              <select class="select" name="qty" id="qty">
+              <select class="select order-quantity" name="qty" id="qty">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -175,7 +183,7 @@
                 <option value="9">9</option>
               </select>
             </div>
-            <input type="submit" value="ADD TO CART" class="order-page__add btn">
+            <button class="order-page__add btn">ADD TO CART</button>
           </div>
           <a href="anne-sarap.html" class="order-page__back">
             <svg 
@@ -194,7 +202,7 @@
           </a>
         </div>
     </div>
-    </form>
+  </div>
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>

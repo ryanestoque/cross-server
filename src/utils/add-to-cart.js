@@ -12,6 +12,7 @@ const addToCart = () => {
           stall: foodItem.getAttribute("data-stall"),
           price: parseFloat(foodItem.getAttribute("data-price")),
           quantity: parseInt(foodItem.querySelector(".order-quantity").value),
+          fldr: foodItem.getAttribute("data-fldr"),
           img: foodItem.getAttribute("data-img"),
           href: foodItem.getAttribute("data-href"),
         };
@@ -36,7 +37,7 @@ const addToCart = () => {
           alert(`${existingItem.name} quantity cannot exceed 9. Adding only ${9 - existingItem.quantity} more.`);
           existingItem.quantity = 9;
           localStorage.setItem("cart", JSON.stringify(cart));
-          return false; // Addition restricted
+          return false;
         } else {
           existingItem.quantity = newQuantity;
         }
@@ -49,7 +50,7 @@ const addToCart = () => {
       }
     
       localStorage.setItem("cart", JSON.stringify(cart));
-      return true; // Addition successful
+      return true;
     }
     
     const cardItemsContainer = document.querySelector(".cart__orders");
@@ -87,7 +88,7 @@ const addToCart = () => {
           <a href="${item.href}">
             <img 
               class="lazy__img"
-              data-src="/amarah-foods/${item.img}"
+              data-src="/${item.fldr}/${item.img}"
             >
           </a>
         </div>
@@ -117,17 +118,6 @@ const addToCart = () => {
       `;
     
       cardItemsContainer.appendChild(cartItem);
-
-      document.querySelectorAll(".remove-item").forEach(button => {
-        button.addEventListener("click", function () {
-          const confirmDelete = window.confirm("Are you sure you want to remove this item from the cart?");
-    
-          if (confirmDelete) {
-            removeFromCart(this.getAttribute("data-id"));
-            this.parentElement.remove();
-          }
-        });
-      });
     
       const quantitySelect = cartItem.querySelector(".select");
       const priceElement = cartItem.querySelector(".cart__item-price");
@@ -145,14 +135,23 @@ const addToCart = () => {
           localStorage.setItem("cart", JSON.stringify(cart));
         }
       });
-    });    
+
+      document.querySelectorAll(".remove-item").forEach(button => {
+        button.addEventListener("click", function () {
+            removeFromCart(this.getAttribute("data-id"));
+            this.parentElement.remove();
+        });
+      });
+    });
 
     function removeFromCart(id) {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
       cart = cart.filter(item => item.id !== id);
       localStorage.setItem("cart", JSON.stringify(cart));
 
-      window.location.reload();
+      if(cart.length < 1) {
+        window.location.reload();
+      }
     }
   }
 }
