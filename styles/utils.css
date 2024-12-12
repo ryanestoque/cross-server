@@ -127,6 +127,7 @@
   background: transparent;
   color: var(--clr-blue700);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .select:focus {

@@ -8,7 +8,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 8rem;
   animation: slideUp 1s ease-in-out;
 }
@@ -81,7 +81,7 @@ html {
 /* xl-screens */
 @media (min-width: 1280px) {
   .hero {
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
 
   .hero__heading {

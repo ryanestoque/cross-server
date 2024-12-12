@@ -7,7 +7,7 @@
 .about__content {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .about__title {
@@ -71,7 +71,7 @@
   }
 
   .about__content {
-    gap: 1rem;
+    gap: 1.25rem;
   }
 
   .about__title {
