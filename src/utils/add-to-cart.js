@@ -4,24 +4,29 @@ const addToCart = () => {
 
     addToCartButtons.forEach(button => {
       button.addEventListener("click", () => {
-        const foodItem = button.closest(".order-page__container");
+        if(localStorage.getItem("loggedIn") === "false") {
+          window.alert("Log in to continue");
+    
+          window.location.href = "/src/pages/login/login.html";
+        } else {
+          const foodItem = button.closest(".order-page__container");
 
-        const foodData = {
-          id: foodItem.getAttribute("data-id"),
-          name: foodItem.getAttribute("data-name"),
-          stall: foodItem.getAttribute("data-stall"),
-          price: parseFloat(foodItem.getAttribute("data-price")),
-          quantity: parseInt(foodItem.querySelector(".order-quantity").value),
-          fldr: foodItem.getAttribute("data-fldr"),
-          img: foodItem.getAttribute("data-img"),
-          href: foodItem.getAttribute("data-href"),
-        };
+          const foodData = {
+            id: foodItem.getAttribute("data-id"),
+            name: foodItem.getAttribute("data-name"),
+            stall: foodItem.getAttribute("data-stall"),
+            price: parseFloat(foodItem.getAttribute("data-price")),
+            quantity: parseInt(foodItem.querySelector(".order-quantity").value),
+            fldr: foodItem.getAttribute("data-fldr"),
+            img: foodItem.getAttribute("data-img"),
+            href: foodItem.getAttribute("data-href"),
+          };
 
-        const addedSuccessfully = addFood(foodData);
-        if (addedSuccessfully) {
-          alert(`${foodData.name} added to cart!`);
+          const addedSuccessfully = addFood(foodData);
+          if (addedSuccessfully) {
+            alert(`${foodData.name} added to cart!`);
+          }
         }
-        
       });
     });
 
