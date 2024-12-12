@@ -42,7 +42,7 @@
 .menu-mobile-nav__link-line {
   border: solid 1px var(--clr-blue700-light);
   padding-right: 3em;
-  margin-top: -0.5em;
+  margin-top: 0.5em;
   margin-bottom: -1.5em;
 }
 
@@ -51,7 +51,7 @@
   width: var(--size-3xl);
   height: var(--size-3xl);
   color: var(--clr-blue700-light);
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .menu-mobile-nav__cart:hover {
