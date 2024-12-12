@@ -30,7 +30,7 @@ const guestLogin = () => {
       localStorage.setItem("guestUser", JSON.stringify(guestData));
       localStorage.setItem("loggedIn", "true");
   
-      window.history.back();
+      window.location = document.referrer;
     });
   }
 
