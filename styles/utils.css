@@ -90,6 +90,23 @@
   border: solid 1px var(--clr-rose600);
 }
 
+.btn-4 {
+  border: solid 1px var(--clr-blue700);
+  background-color: var(--clr-blue700);
+  padding: 0.75em 1.125em;
+  color: var(--clr-light);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-4:hover {
+  color: var(--clr-blue700);
+  background-color: var(--clr-light);
+}
+
 /* .btn-2:active {
   color: var(--clr-light);
   border: solid 2px var(--clr-light);

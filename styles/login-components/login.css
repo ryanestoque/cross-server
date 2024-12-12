@@ -118,7 +118,7 @@ form button {
   border: 2px solid var(--clr-blue700);
   color: var(--clr-light);
   text-decoration: none;
-  font-size: var(--size-3xl);
+  font-size: var(--size-4xl);
   font-weight: 500;
   width: 45px;
   height: 45px;
@@ -126,6 +126,7 @@ form button {
   transition: all 0.3s;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  margin: 0.625rem;
 }
 
 /* xxs-screens */
