@@ -81,7 +81,6 @@ const addToCart = () => {
     
       cartItem.classList.add("cart__item");
       cartItem.innerHTML = `
-        <input type="checkbox" class="cart-item__checkbox" value="item1">
         <button class="remove-item" data-id=${item.id}>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 

@@ -126,7 +126,7 @@ form button {
   transition: all 0.3s;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  margin: 0.625rem;
+  margin: 0.25rem;
 }
 
 /* xxs-screens */
@@ -169,6 +169,7 @@ form button {
     transition: all 0.3s;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    margin: 0rem;
   }
 
   .back-button:hover {
