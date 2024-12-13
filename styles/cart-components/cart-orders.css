@@ -110,13 +110,15 @@
     margin-top: 0rem;
     margin-left: 0.5rem;
   }
+
+  .cart__select {
+    font-size: var(--size-xs);
+  }
 }
 
 /* xs-screens */
 @media (min-width: 475px) {
-  .cart__select {
-    font-size: var(--size-xs);
-  }
+  
 }
 
 /* sm-screens */

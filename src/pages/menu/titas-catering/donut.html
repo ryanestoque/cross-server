@@ -142,8 +142,16 @@
   <!-- End of Mobile Navigation -->
 
   <main>
-    <form class="order-page container lazy loading">
-      <div class="order-page__container">
+    <div class="order-page container lazy loading">
+      <div 
+        class="order-page__container" 
+        data-id="47"
+        data-name="Donut"
+        data-price="15.00"
+        data-stall="Tita's Catering Services"
+        data-fldr="titas-foods"
+        data-img="donut.webp"
+        data-href="/src/pages/menu/titas-catering/donut.html">
         <div class="order-page__left">
           <img
             class="lazy__img"
@@ -163,7 +171,7 @@
           <div class="order-page__btns">
             <div class="order-page__select select-wrap">
               <label for="qty">Qty:&nbsp;</label>
-              <select class="select" name="qty" id="qty">
+              <select class="select order-quantity" name="qty" id="qty">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -194,7 +202,7 @@
           </a>
         </div>
     </div>
-    </form>
+    </div>
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>

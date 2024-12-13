@@ -51,7 +51,7 @@
   width: var(--size-3xl);
   height: var(--size-3xl);
   color: var(--clr-blue700-light);
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .menu-mobile-nav__cart:hover {
