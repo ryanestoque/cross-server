@@ -68,7 +68,11 @@ const addToCart = () => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     if(cart.length === 0) {
-      cardItemsContainer.innerHTML = "<p>Your cart is empty</p>";
+      cardItemsContainer.innerHTML = `<div class="cart__empty">
+      <svg class="cart__empty-icon" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.0009 21.3201H8.43094C7.33237 21.2923 6.27951 20.8746 5.4606 20.1418C4.64169 19.409 4.11011 18.4088 3.96094 17.3201L2.96094 9.32007" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.9992 9.32007L20.6992 11.8201" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 9.32004C8.81444 7.20973 15.1856 7.20973 21 9.32004" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.42969 8.34006L9.0797 3.32007" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.5699 8.34006L14.9199 3.32007" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 21.8201L22 15.8201" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 15.8201L22 21.8201" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+      <h2 class="cart__empty-text">Your cart is currently empty</h2>
+    </div>
+    <a class="cart__empty-btn btn" href="/src/pages/menu/menu.html">Continue to Menu</a>`;
       return;
     }
 
