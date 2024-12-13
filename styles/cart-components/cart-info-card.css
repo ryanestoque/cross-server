@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
   word-break: normal;
   overflow: hidden;
 }
@@ -28,6 +28,12 @@
   max-width: 13ch;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.cart__info-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .cart__info-card-user-info {
