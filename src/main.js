@@ -19,6 +19,7 @@ import '../styles/cart-components/cart.css';
 import '../styles/cart-components/cart-orders.css';
 import '../styles/cart-components/cart-total-card.css';
 import '../styles/cart-components/cart-info-card.css';
+import '../styles/home-components/footer.css';
 
 // CSS UTILS
 import '../styles/utils.css';

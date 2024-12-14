@@ -9,7 +9,7 @@
 
 /* menu-scrollbar */
 
-.menu::-webkit-scrollbar {
+/* .menu::-webkit-scrollbar {
   width: 8px;
 }
  
@@ -20,4 +20,4 @@
 .menu::-webkit-scrollbar-thumb {
   background-color: var(--clr-blue700);
   outline: 1px solid var(--clr-blue700);
-}
+} */

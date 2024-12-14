@@ -172,6 +172,10 @@
   .teaser__food {
     aspect-ratio: 1 / 1;
   }
+
+  .teaser__btn {
+    font-size: var(--size-sm);
+  }
 }
 
 /* md-screens */
@@ -220,7 +224,7 @@
   }
 
   .teaser__btn {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
 }
 

@@ -1,7 +1,7 @@
 .team__title {
   color: var(--clr-light);
   font-size: var(--size-3xl);
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .team {
@@ -87,6 +87,10 @@
 
 /* sm-screens */
 @media (min-width: 640px) {
+  .team__title {
+    margin-bottom: 1rem;
+  }
+
   .team__img {
     width: 15rem;
   }
