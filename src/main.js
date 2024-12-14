@@ -5,6 +5,7 @@ import '../styles/home-components/header.css';
 import '../styles/home-components/hero.css';
 import '../styles/home-components/marquee.css';
 import '../styles/home-components/about.css';
+import '../styles/home-components/team.css';
 import '../styles/home-components/mobile-nav.css';
 import '../styles/home-components/teaser.css';
 import '../styles/login-components/login.css';

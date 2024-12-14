@@ -1,5 +1,4 @@
 const guestLogin = () => {
-  // Ensure "loggedIn" key exists in localStorage
   if (!localStorage.getItem("loggedIn")) {
     localStorage.setItem("loggedIn", "false");
   }

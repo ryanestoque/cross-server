@@ -139,7 +139,6 @@
   }
 }
 
-
 /* xs-screens */
 @media (min-width: 475px) {
   .teaser__title {
@@ -166,17 +165,6 @@
 
 /* sm-screens */
 @media (min-width: 640px) {
-  .teaser__food-title {
-    font-size: var(--size-5xl);
-  }
-
-  .teaser__food-stall {
-    font-size: var(--size-xl);
-  }
-}
-
-/* md-screens */
-@media (min-width: 768px) {
   .teaser__card-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -184,7 +172,10 @@
   .teaser__food {
     aspect-ratio: 1 / 1;
   }
+}
 
+/* md-screens */
+@media (min-width: 768px) {
   .teaser__food-title {
     font-size: var(--size-4xl);
   }
