@@ -198,6 +198,36 @@
         </div>
       </div>
       <div class="cart__right">
+        <div class="cart__total-card">
+          <h1 class="cart__total-title">Order Summary</h1>
+          <div class="cart__total-list">
+            <div class="cart__total-list-left">
+              <p>Cart Subtotal</p>
+              <p>Delivery Fee</p>
+              <p class="cart__total-total">Total</p>
+            </div>
+            <div class="cart__total-list-right">
+              <p>₱0.00</p>
+              <p>₱0.00</p>
+              <p class="cart__total-price">₱0.00</p>
+            </div>
+          </div>
+          <button 
+            onclick="
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (cart.length > 0) {
+              alert('Thank you for your order! Please check your email or SMS for further updates.\n\n- HCDC CANTEEN <3');
+              localStorage.removeItem('cart');
+              window.location.reload();
+              updateCartTotal();
+            }" 
+            
+            id="placeOrder" 
+            class="cart__total-place-order btn">
+            PLACE ORDER
+          </button>
+        </div>
         <div class="cart__info-card">
           <div class="cart__info-name">
             <svg 

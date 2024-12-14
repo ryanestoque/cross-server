@@ -73,7 +73,20 @@ const addToCart = () => {
       <h2 class="cart__empty-text">Your cart is currently empty</h2>
     </div>
     <a class="cart__empty-btn btn" href="/src/pages/menu/menu.html">CONTINUE TO MENU</a>`;
+      document.getElementById("placeOrder").classList.remove("btn");
+      document.getElementById("placeOrder").classList.add("btn-disabled");
+      document.getElementById("placeOrder").disable = true;
+      document.getElementById("placeOrder").style.opacity = "0.5";
+      document.getElementById("placeOrder").style.cursor = "not-allowed";
+
       return;
+
+    } else {
+      document.getElementById("placeOrder").classList.remove("btn-disabled");
+      document.getElementById("placeOrder").classList.add("btn");
+      document.getElementById("placeOrder").disable = false;
+      document.getElementById("placeOrder").style.opacity = "1";
+      document.getElementById("placeOrder").style.cursor = "pointer";
     }
 
     cart.forEach(item => {
@@ -142,12 +155,16 @@ const addToCart = () => {
           cart[existingItemIndex].quantity = newQuantity;
           localStorage.setItem("cart", JSON.stringify(cart));
         }
+
+        updateCartTotal();
       });
 
       document.querySelectorAll(".remove-item").forEach(button => {
         button.addEventListener("click", function () {
             removeFromCart(this.getAttribute("data-id"));
             this.parentElement.remove();
+
+            updateCartTotal();
         });
       });
     });
@@ -161,6 +178,16 @@ const addToCart = () => {
         window.location.reload();
       }
     }
+
+    function updateCartTotal() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    
+      document.querySelector(".cart__total-list-right p:nth-child(1)").textContent = `₱${subtotal.toFixed(2)}`;
+      document.querySelector(".cart__total-price").textContent = `₱${subtotal.toFixed(2)}`;
+    }
+
+    updateCartTotal();
   }
 }
 

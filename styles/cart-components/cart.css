@@ -4,19 +4,22 @@
   align-items: center;
   margin-top: 7rem;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .cart__left {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   gap: 1rem;
   flex: 2;
 }
 
 .cart__right {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  gap: 2rem;
 }
 
 /* xxs-screens */
@@ -39,7 +42,7 @@
   .cart {
     flex-direction: row;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 3rem;
   }
   
 }

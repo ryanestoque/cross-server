@@ -15,8 +15,9 @@ import '../styles/menu-components/menu-stalls.css';
 import '../styles/menu-components/menu-stalls-foods.css';
 import '../styles/menu-components/menu-order-page.css';
 import '../styles/cart-components/cart.css';
-import '../styles/cart-components/cart-info-card.css';
 import '../styles/cart-components/cart-orders.css';
+import '../styles/cart-components/cart-total-card.css';
+import '../styles/cart-components/cart-info-card.css';
 
 // CSS UTILS
 import '../styles/utils.css';

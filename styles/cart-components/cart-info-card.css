@@ -1,7 +1,7 @@
 .cart__info-card {
   min-width: 100px;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--clr-blue700);
   background-color: var(--clr-light);
   /* box-shadow: 0 10px 20px rgba(29, 78, 216, 0.5), 0 6px 6px rgba(29, 78, 216, 0.5), 0 0 50px -10px var(--clr-blue700); */
@@ -70,6 +70,7 @@
 }
 
 .cart__logout {
+  width: 100%;
   font-size: var(--size-sm);
   margin-top: 2rem;
 }
