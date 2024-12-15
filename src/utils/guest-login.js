@@ -56,7 +56,7 @@ const guestLogin = () => {
     const logoutBtn = document.getElementById("logoutBtn");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
-        if(confirm("Are sure you want to log out?")) {
+        if(confirm("Are you sure you want to log out?")) {
           localStorage.removeItem("guestUser");
           localStorage.setItem("loggedIn", "false");
   
