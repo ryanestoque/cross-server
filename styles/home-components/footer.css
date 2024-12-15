@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: row;
   padding: 1.5rem;
-  width: 100%;
   background-color: var(--clr-rose600);
   gap: 1rem;
 }
