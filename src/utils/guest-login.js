@@ -56,11 +56,13 @@ const guestLogin = () => {
     const logoutBtn = document.getElementById("logoutBtn");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
-        localStorage.removeItem("guestUser");
-        localStorage.setItem("loggedIn", "false");
-
-        window.location.href = "/index.html";
-        alert("You have been logged out as a guest.");
+        if(confirm("Are sure you want to log out?")) {
+          localStorage.removeItem("guestUser");
+          localStorage.setItem("loggedIn", "false");
+  
+          window.location.href = "/index.html";
+          alert("You have been logged out as a guest.");
+        }
       });
     }
 
