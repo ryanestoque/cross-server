@@ -52,7 +52,6 @@ const guestLogin = () => {
       toggleVisibility(mobileMenuCart, false);
     }
 
-    // Handle logout functionality
     const logoutBtn = document.getElementById("logoutBtn");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
@@ -69,6 +68,7 @@ const guestLogin = () => {
     if (document.body.classList.contains("sign-in")) {
       const guestForm = document.getElementById("guestForm");
       const guestContactInput = document.getElementById("guestContact");
+      const editForm = document.getElementById("editForm");
 
       if (guestContactInput) {
         guestContactInput.addEventListener("input", (e) => {

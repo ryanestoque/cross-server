@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://api.fontshare.com/v2/css?f[]=montserrat@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap" rel="stylesheet">
-  <title>Guest Login | Cross-Server</title>
+  <title>Edit Info | Cross-Server</title>
 </head>
 <body class="sign-in">
-  <main class="sign-in__wrapper">
+  <main>
     <section class="sign-in__container lazy loading">
       <div class="welcome-back">
         <div class="welcome-back__content">
-          <h1>Welcome!</h1>
+          <h1>Edit Info</h1>
           <p>
-            To keep connected with us, please sign in with your personal info.
+            Feel free to change the information you have provided.
           </p>
         </div>
         <a onclick="window.history.back()" class="back-button">
@@ -22,8 +22,7 @@
       </div>
   
       <div class="form-section container">
-        <h2>Login as Guest</h2>
-        <form id="guestForm" autocomplete="off">
+        <form id="editForm" autocomplete="off">
           <div class="form-group">
             <label for="name">Name</label>
             <input 
@@ -66,7 +65,7 @@
               >
           </div>
   
-          <button class="btn" type="submit">SIGN IN</button>
+          <button class="btn" type="submit">SAVE</button>
         </form>
       </div>
     </section>
