@@ -106,6 +106,36 @@ const guestLogin = () => {
           window.location = document.referrer;
         });
       }
+
+      if (editForm) {
+        const guestUser = JSON.parse(localStorage.getItem("guestUser")) || {};
+      
+        document.getElementById("guestName").value = guestUser.name || "";
+        document.getElementById("guestEmail").value = guestUser.email || "";
+        document.getElementById("guestAddress").value = guestUser.address || "";
+        document.getElementById("guestContact").value = guestUser.contact || "";
+      
+        editForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+      
+          const guestName = document.getElementById("guestName").value;
+          const guestEmail = document.getElementById("guestEmail").value;
+          const guestAddress = document.getElementById("guestAddress").value;
+          const guestContact = document.getElementById("guestContact").value;
+      
+          const guestData = {
+            name: guestName,
+            email: guestEmail,
+            address: guestAddress,
+            contact: guestContact,
+          };
+      
+          localStorage.setItem("guestUser", JSON.stringify(guestData));
+      
+          window.location = document.referrer;
+        });
+      }
+      
     }
   });
 };

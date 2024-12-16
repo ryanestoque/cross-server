@@ -16,8 +16,16 @@
   overflow: hidden;
 }
 
+.cart__info-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .cart__profile-pic {
   width: 8rem;
+  flex: 2;
 }
 
 .cart__greeting {
@@ -28,13 +36,7 @@
   max-width: 13ch;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.cart__info-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  flex: 2;
 }
 
 .cart__info-card-user-info {
