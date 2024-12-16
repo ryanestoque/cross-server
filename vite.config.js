@@ -6,7 +6,7 @@ export default defineConfig({
       input: {
         main: './index.html',
         login: './src/pages/login/login.html',
-        login: './src/pages/login/edit-info.html',
+        editInfo: './src/pages/login/edit-info.html',
         menu: './src/pages/menu/menu.html',
         cart: './src/pages/cart/cart.html',
         
