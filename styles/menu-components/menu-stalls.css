@@ -3,8 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 5rem;
   gap: 1.5rem;
+}
+
+.stalls-menu {
+  margin-top: 7rem;
 }
 
 .stalls__title {
