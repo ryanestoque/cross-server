@@ -95,6 +95,14 @@
   .cart__info-icons {
     width: var(--size-lg);
   }
+
+  .cart__logout {
+    font-size: var(--size-sm);
+  }
+  
+  .cart__edit {
+    font-size: var(--size-sm);
+  }
 }
 
 /* xs-screens */
@@ -119,11 +127,11 @@
   }
 
   .cart__logout {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
 
   .cart__edit {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
 }
 
@@ -145,6 +153,13 @@
     width: var(--size-base);
   }
   
+  .cart__logout {
+    font-size: var(--size-sm);
+  }
+
+  .cart__edit {
+    font-size: var(--size-sm);
+  }
 }
 
 /* lg-screens */
@@ -158,7 +173,7 @@
   }
 
   .cart__info {
-    font-size: var(--size-large);
+    font-size: var(--size-lg);
   }
   
   .cart__info-icons {
@@ -166,12 +181,11 @@
   }
 
   .cart__logout {
-    font-size: var(--size-base);
-    margin-top: 2.5rem;
+    font-size: var(--size-lg);
   }
 
   .cart__edit {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 }
 
@@ -182,11 +196,5 @@
 
 /* 2xl-screens */
 @media (min-width: 1536px) {
-  .cart__logout {
-    font-size: var(--size-lg);
-  }
 
-  .cart__edit {
-    font-size: var(--size-lg);
-  }
 }

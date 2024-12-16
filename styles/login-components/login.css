@@ -6,12 +6,6 @@
   padding: 2rem;
 }
 
-.sign-in__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .sign-in__container {
   position: relative;
   display: flex;

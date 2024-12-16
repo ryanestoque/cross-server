@@ -56,7 +56,9 @@
 
 /* xxs-screens */
 @media (min-width: 320px) {    
-  
+  .cart__total-place-order {
+    font-size: var(--size-sm);
+  }
 }
 
 /* xs-screens */
@@ -73,7 +75,7 @@
 /* sm-screens */
 @media (min-width: 640px) {
   .cart__total-place-order {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
 
   .cart__total-price {
@@ -92,7 +94,7 @@
   }
 
   .cart__total-place-order {
-    font-size: var(--size-xs);
+    font-size: var(--size-sm);
   }
 
   .cart__total-price {
@@ -111,7 +113,7 @@
   }
 
   .cart__total-place-order {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 
   .cart__total-price {
