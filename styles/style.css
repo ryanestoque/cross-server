@@ -113,3 +113,7 @@ select:-webkit-autofill:focus {
   color: var(--clr-blue700);
   background-color: var(--clr-blue700-light)
 }
+
+:focus-visible {
+  outline-color: var(--clr-rose600);
+}
