@@ -96,7 +96,7 @@ const guestLogin = () => {
     const logoutBtn = document.getElementById("logoutBtn");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
-        if(confirm("Are you sure you want to log out?")) {
+        if(confirm("Are you sure you want to log out? (This will permanently wipe out your session.)")) {
           localStorage.removeItem("guestUser");
           localStorage.removeItem("cart");
           localStorage.setItem("loggedIn", "false");
