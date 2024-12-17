@@ -55,6 +55,22 @@
   color: var(--clr-rose600);
 }
 
+.header__cart-indicator {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  background-color: var(--clr-rose600);
+  border-radius: 50%;
+  width: 20px;
+  color: var(--clr-light);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-xs);
+}
+
 /* xs-screens */
 @media (min-width: 475px) {
   .header__nav {
@@ -108,12 +124,14 @@
   }
   
   .header__cart {
+    position: relative;
     display: none;
     color: var(--clr-blue700-light);
     width: var(--size-2xl);
     height: var(--size-2xl);
     margin-left: -0.25rem;
     transition: color 0.3s;
+    z-index: 2;
   }
 
   .header__cart:hover {
@@ -147,6 +165,11 @@
     width: var(--size-2xl);
     height: var(--size-2xl);
   }
+
+  .header__cart-indicator {
+    width: 15px;
+    font-size: var(--size-xxs);
+  }
 }
 
 /* lg-screens */
@@ -162,6 +185,11 @@
   .header__cart {
     width: var(--size-3xl);
     height: var(--size-3xl);
+  }
+
+  .header__cart-indicator {
+    width: 20px;
+    font-size: var(--size-xs);
   }
 }
 

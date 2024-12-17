@@ -17,6 +17,8 @@
 
 .cart__right {
   display: flex;
+  justify-content: center;
+  width: 100%;
   flex-direction: column;
   flex: 1;
   gap: 2rem;

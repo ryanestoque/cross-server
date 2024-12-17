@@ -47,6 +47,7 @@
 }
 
 .menu-mobile-nav__cart {
+  position: relative;
   display: none;
   width: var(--size-3xl);
   height: var(--size-3xl);

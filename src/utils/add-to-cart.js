@@ -42,6 +42,7 @@ const addToCart = () => {
           alert(`${existingItem.name} quantity cannot exceed 9. Adding only ${9 - existingItem.quantity} more.`);
           existingItem.quantity = 9;
           localStorage.setItem("cart", JSON.stringify(cart));
+          updateCartLength();
           return false;
         } else {
           existingItem.quantity = newQuantity;
@@ -55,6 +56,7 @@ const addToCart = () => {
       }
     
       localStorage.setItem("cart", JSON.stringify(cart));
+      updateCartLength();
       return true;
     }
     
@@ -156,6 +158,7 @@ const addToCart = () => {
           localStorage.setItem("cart", JSON.stringify(cart));
         }
 
+        updateCartLength();
         updateCartTotal();
       });
 
@@ -165,6 +168,7 @@ const addToCart = () => {
             this.parentElement.remove();
 
             updateCartTotal();
+            updateCartLength();
         });
       });
     });
@@ -187,7 +191,18 @@ const addToCart = () => {
       document.querySelector(".cart__total-price").textContent = `₱${subtotal.toFixed(2)}`;
     }
 
-    updateCartTotal();
+    updateCartTotal(); 
+
+    function updateCartLength() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+    
+      if (totalQuantity > 99) {
+        document.querySelector(".header__cart-indicator").textContent = "99+";
+      } else {
+        document.querySelector(".header__cart-indicator").textContent = totalQuantity;
+      }
+    } 
   }
 }
 

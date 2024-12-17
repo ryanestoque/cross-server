@@ -47,11 +47,13 @@
 }
 
 .mobile-nav__cart {
+  position: relative;
   display: none;
   width: var(--size-3xl);
   height: var(--size-3xl);
   color: var(--clr-blue700-light);
   margin-top: 2rem;
+  z-index: 2;
 }
 
 .mobile-nav__cart:hover {

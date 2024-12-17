@@ -215,9 +215,10 @@
           <button 
             onclick="
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const guestUser = JSON.parse(localStorage.getItem('guestUser')) || '';
 
             if (cart.length > 0) {
-              alert('Daghang salamat, Holy Crossian! Please check your email or SMS for further updates.\n\n- HCDC CANTEEN <3');
+              alert(`Daghang salamat, ${guestUser.name}! Please check your email or SMS for further updates. Mabuhay ug madayaw!\n\n- HCDC CANTEEN <3`);
               localStorage.removeItem('cart');
               window.location.reload();
               updateCartTotal();

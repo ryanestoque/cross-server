@@ -108,6 +108,7 @@
   }
   
   .menu-header__cart {
+    position: relative;
     display: none;
     color: var(--clr-blue700-light);
     width: var(--size-2xl);
