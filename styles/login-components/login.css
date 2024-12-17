@@ -81,8 +81,8 @@ form .form-group {
 form .form-group label {
   margin-bottom: 0.5rem;
   display: block;
-  color: var(--clr-blue700);
-  font-weight: 600;
+  color: hsl(224, 76%, 53%);
+  font-weight: 500;
 }
 
 form .form-group input {
@@ -94,7 +94,7 @@ form .form-group input {
 
 input {
   color: var(--clr-blue700);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 input:focus {
