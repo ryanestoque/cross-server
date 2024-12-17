@@ -108,3 +108,8 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--clr-blue700);
 }
+
+::selection {
+  color: var(--clr-blue700);
+  background-color: var(--clr-blue700-light)
+}
