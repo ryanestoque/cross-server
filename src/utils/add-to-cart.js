@@ -199,8 +199,10 @@ const addToCart = () => {
     
       if (totalQuantity > 99) {
         document.querySelector(".header__cart-indicator").textContent = "99+";
+        document.querySelector(".menu-mobile-nav__cart").lastElementChild.textContent = "99+";
       } else {
         document.querySelector(".header__cart-indicator").textContent = totalQuantity;
+        document.querySelector(".menu-mobile-nav__cart").lastElementChild.textContent = totalQuantity;
       }
     } 
   }

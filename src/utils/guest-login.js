@@ -46,21 +46,32 @@ const guestLogin = () => {
         if(totalQuantity < 1) {
           menuHeaderCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">0</div>`);
           mobileMenuCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">0</div>`);
-        } else if(totalQuantity >= 1 && totalQuantity <= 99) {
-            menuHeaderCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">${totalQuantity}</div>`);
-            mobileMenuCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">${totalQuantity}</div>`);
-        } else {
-            menuHeaderCart.insertAdjacentHTML("beforeend", `<div  class="header__cart-indicator">99+</div>`);
-            mobileMenuCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">99+</div>`);
+        } 
+        
+        else if(totalQuantity >= 1 && totalQuantity <= 99) {
+          menuHeaderCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">${totalQuantity}</div>`);
+          mobileMenuCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">${totalQuantity}</div>`);
+        } 
+        
+        else {
+          menuHeaderCart.insertAdjacentHTML("beforeend", `<div  class="header__cart-indicator">99+</div>`);
+          mobileMenuCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">99+</div>`);
         }
-      } else if(!document.body.classList.contains("menu") && !document.body.classList.contains("sign-in")) {
+
+      } 
+      
+      else if(!document.body.classList.contains("menu") && !document.body.classList.contains("sign-in")) {
         if(totalQuantity < 1) {
           headerCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">0</div>`);
           mobileNavCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">0</div>`);
-        } else if(totalQuantity >= 1 && totalQuantity <= 99) {
+        } 
+        
+        else if(totalQuantity >= 1 && totalQuantity <= 99) {
           headerCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">${totalQuantity}</div>`);
           mobileNavCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">${totalQuantity}</div>`);
-        } else if(totalQuantity > 99){
+        } 
+        
+        else if(totalQuantity > 99){
           headerCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">99+</div>`);
           mobileNavCart.insertAdjacentHTML("beforeend", `<div class="header__cart-indicator">99+</div>`);
         }
