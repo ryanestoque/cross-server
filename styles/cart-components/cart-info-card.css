@@ -34,7 +34,7 @@
   letter-spacing: -0.05em;
   font-weight: 600;
   font-size: var(--size-xl);
-  max-width: 13ch;
+  /* max-width: 13ch; */
   overflow: hidden;
   text-overflow: ellipsis;
   /* flex: 3; */
