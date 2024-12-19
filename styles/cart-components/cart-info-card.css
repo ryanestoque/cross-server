@@ -76,12 +76,14 @@
   width: 100%;
   font-size: var(--size-xs);
   margin-top: 2rem;
+  overflow: hidden;
 }
 
 .cart__edit {
   width: 100%;
   font-size: var(--size-xs);
   margin-top: 0.75rem;
+  overflow: hidden;
 }
 
 /* xxs-screens */

@@ -7,6 +7,7 @@
   width: 100%;
   border-radius: 16px;
   padding: 1.5rem;
+  overflow: hidden;
 }
 
 .cart__total-title {
@@ -14,12 +15,16 @@
   font-weight: 700;
   letter-spacing: -0.05em;
   color: var(--clr-light);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cart__total-list {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cart__total-list-left {
@@ -52,6 +57,7 @@
 
 .cart__total-place-order {
   font-size: var(--size-xs);
+  overflow: hidden;
 }
 
 /* xxs-screens */
