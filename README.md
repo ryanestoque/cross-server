@@ -1,8 +1,8 @@
 # cross-server
-- Leader: Ryan Estoque
-- Developer: Angela Gardan
-- Designer: Jhon Albacite
-- Documenter: Kristian Cunanan
+- Leader: Ryan Christopher Estoque
+- Developer: Angela Jelly Gardan
+- Designer: Jhon Dominic Albacite
+- Documenter: Kristian Mark Cunanan
 
 Instructions:
 1. Make sure node.js is properly installed and configured in your computer.
@@ -12,7 +12,3 @@ Instructions:
 - npm run dev
 
 3. Redirect to the provided url (localhost).
-
-What's (not) working:
-1. Only an intro page yet!
-[ Ryan (10/29/2024 2:19 AM) ]
